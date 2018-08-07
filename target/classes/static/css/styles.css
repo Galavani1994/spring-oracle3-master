@@ -1,0 +1,105 @@
+.navbar{
+    font-size: medium;
+    font-family: "B Yekan";
+}
+#div0
+{
+    background-color: #e0e0e0;
+    text-align: center;
+    font-family: "B Titr";
+}
+#div1
+{
+    padding-top: 15px;
+
+    width: 100%;
+    height: 500px;
+    background-color: #5bc0de;
+    font-family: "B Yekan";
+}
+#frm1
+{
+    width: 300px;
+    height: 300px;
+    background-color: #1ce2ff;
+    text-align: center;
+
+}
+#frm2{
+    width: 300px;
+    height: 250px;
+    background-color: #eeeeee;
+}
+#divinfo
+{
+    text-align: right;
+    background-color: #1e7e34;
+    width: 300px;
+    height: 250px;
+}
+#divresult
+{
+    width: 300px;
+    height: 250px;
+    background-color: white;
+}
+#tblpr
+{
+
+    text-align: center;
+
+}
+.table-wrapper-scroll-y
+{
+    display: block;
+    max-height: 450px;
+    overflow-y: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    text-align: right;
+}
+#frmedit{
+    text-align: center;
+    font-family: "B Nazanin";
+
+    padding-top: 25px;
+}
+#frmeditpr
+{
+    text-align: center;
+    font-family: "B Nazanin";
+    padding-top: 45px;
+
+}
+footer
+{
+    background-color: tan ;
+    width: 100%;
+    height: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#divchild1
+{
+    width:100%;
+    height: 250px;
+    background-color: burlywood;
+    padding-top: 15px;
+}
+#divchild2
+{
+    width:100%;
+    height: 150px;
+    background-color: bisque;
+    padding-top: 10px;
+}
+#divchild3
+{
+    background-color: burlywood;
+    width:100%;
+    height: 200px;
+    padding-top: 15px;
+}
+#divparent
+{
+    margin-top: 0px;
+}
