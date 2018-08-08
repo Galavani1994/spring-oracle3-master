@@ -16,4 +16,7 @@ public interface ProductionRepo extends JpaRepository<Production,Integer> {
 
     @Query("from Production where prName like %?1% ")
     List<Production> findByFirstNameORLastNameLike(String prName);
+
+    @Query("from Production where prid=?1")
+    Production findByPrid(String prid);
 }

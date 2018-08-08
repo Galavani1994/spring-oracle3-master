@@ -124,29 +124,32 @@
     </div>
     <div class="row" id="divchild2">
 
-        <form style="text-align: right">
-            <label>کدکالا</label>
-            <input type="text" name="prid" size="7">
-            <label>نام کالا</label>
-            <input type="text" name="prname"><br/><br/>
-            <label>تحویلی</label>
-            <input type="text" name="exist" size="7">
-            <label>موجودی</label>
-            <input type="text" name="exist" size="7">
-            <label></label>
-            <input type="text" name="existfinal" size="7"><br/><br/>
-            <label>قیمت واحد</label>
-            <input type="text" name="price" size="7">
-            <label>تخفیف</label>
-            <input type="text" name="discount" size="7">
-            <label>وجه </label>
-            <input type="text" name="pay" size="7">
-            <label>شماره فاکتور</label>
-            <input type="text" name="factor" size="7">
-            <label>مانده</label>
-            <input type="text" name="remain" size="7">
-            <input type="submit" class="btn btn-primary" value="ثبت">
-        </form>
+
+            <form style="text-align: right" action="/showproduction" method="post">
+                <input type="text" hidden name="cuid" value="${listcu.cuid}">
+                <label>کدکالا</label>
+                <input type="text" name="prid" size="7" value="${listpr.prid}">
+                <label>نام کالا</label>
+                <input type="text" name="prname" value="${listpr.prName}"><br/><br/>
+                <label>تحویلی</label>
+                <input type="text" name="exist" size="7">
+                <label>موجودی</label>
+                <input type="text" name="exist" value="${listpr.meter}" size="7">
+                <label></label>
+                <input type="text" name="existfinal" size="7"><br/><br/>
+                <label>قیمت واحد</label>
+                <input type="text" name="price" size="7">
+                <label>تخفیف</label>
+                <input type="text" name="discount" size="7">
+                <label>وجه </label>
+                <input type="text" name="pay" size="7">
+                <label>شماره فاکتور</label>
+                <input type="text" name="factor" size="7">
+                <label>مانده</label>
+                <input type="text" name="remain" size="7">
+                <input type="submit" class="btn btn-primary" value="ثبت">
+            </form>
+
     </div>
 
     <div id="divchild3" class="row">

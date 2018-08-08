@@ -18,12 +18,12 @@ public class CustomerController {
     @Autowired
     private CustomerRepo customerRepo;
 
+
     @RequestMapping("/")
     public ModelAndView index() {
         ModelAndView mv = new ModelAndView("index");
         return mv;
     }
-
 
     @RequestMapping("/customerPage")
     public ModelAndView doHOme() {

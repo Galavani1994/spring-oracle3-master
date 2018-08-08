@@ -32,6 +32,15 @@ public class CPController {
         mv.addObject("listcu", customerRepo.findByCuid(cuid));
         return mv;
     }
+    @RequestMapping("/showproduction")
+    public ModelAndView showPr(@RequestParam("cuid") String cuid,@RequestParam("prid") String prid)
+    {
+        ModelAndView mv=new ModelAndView("index");
+        mv.addObject("listcu", customerRepo.findByCuid(cuid));
+        mv.addObject("listpr",prRepo.findByPrid(prid));
+
+        return mv;
+    }
 
 
 }
