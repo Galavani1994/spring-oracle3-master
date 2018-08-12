@@ -1,7 +1,6 @@
 package com.developer.springOracle3.controller;
 
 import com.developer.springOracle3.MyException;
-import com.developer.springOracle3.entity.Customer;
 import com.developer.springOracle3.entity.Production;
 import com.developer.springOracle3.model.repository.ProductionRepo;
 import com.developer.springOracle3.model.service.ProductionService;
@@ -49,7 +48,7 @@ public class ProductionController {
         }
 
         production.setPrName(prName);
-        production.setMeter(meter);
+        production.setMeterPr(meter);
 
         prService.save(production);
         return mv;

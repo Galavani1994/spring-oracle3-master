@@ -1,5 +1,7 @@
 package com.developer.springOracle3.entity;
 
+import org.springframework.stereotype.Service;
+
 import javax.persistence.*;
 
 /**
@@ -7,6 +9,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "production")
+@Service
 public class Production {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -16,7 +19,7 @@ public class Production {
     @Column
     private String prName;
     @Column
-    private String meter;
+    private String meterPr;
 
     public Production() {
     }
@@ -24,7 +27,7 @@ public class Production {
     public Production(String prid, String prName, String meter) {
         this.prid = prid;
         this.prName = prName;
-        this.meter = meter;
+        this.meterPr = meter;
     }
 
     public int getId() {
@@ -51,11 +54,11 @@ public class Production {
         this.prName = prName;
     }
 
-    public String getMeter() {
-        return meter;
+    public String getMeterPr() {
+        return meterPr;
     }
 
-    public void setMeter(String meter) {
-        this.meter = meter;
+    public void setMeterPr(String meterPr) {
+        this.meterPr = meterPr;
     }
 }

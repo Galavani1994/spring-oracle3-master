@@ -1,7 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ page import="com.developer.springOracle3.entity.Customer" %>
-<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!doctype html>
@@ -48,7 +46,7 @@
             </li>
 
         </ul>
-        <form  class="form-inline my-2 my-lg-0" dir="ltr" action="/resultPr">
+        <form class="form-inline my-2 my-lg-0" dir="ltr" action="/resultPr">
             <input class="form-control mr-sm-2" type="text" placeholder="جستجو" aria-label="Search" dir="rtl"
                    name="names">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">جستجو</button>
@@ -71,7 +69,7 @@
             <input type="text" name="prname"/><br/><br>
             متراژ:
             <br/>
-            <input type="text" name="meter"><br/><br>
+            <input type="text" name="metercp"><br/><br>
 
             <input type="submit" value="ثبت" class="btn btn-primary">
         </form>
@@ -93,10 +91,11 @@
                             <td hidden><input type="hidden" name="id" value="${list.id}"></td>
                             <td><input type="text" name="prid" style="width: 60px" value="${list.prid}" readonly></td>
                             <td><input type="text" name="prname" style="width: 90px" value="${list.prName}"></td>
-                            <td><input type="text" name="meter" style="width: 90px" value="${list.meter}"></td>
+                            <td><input type="text" name="metercp" style="width: 90px" value="${list.metercp}"></td>
                             </td>
                             <td>
-                                <input type="button"  class="btn btn-primary" onclick="doo(${list.id}, 'delete')" value="delete">
+                                <input type="button" class="btn btn-primary" onclick="doo(${list.id}, 'delete')"
+                                       value="delete">
                                 <input type="submit" id="editbtn" class="btn btn-primary" value="virayesh">
                             </td>
                         </form>

@@ -17,6 +17,8 @@ public class CustomerService {
     public void save(Customer customer) throws MyException {
 
 
+        customer.setFirstName("آقای  " + customer.getFirstName());
+
         Customer save = customerRepo.save(customer);
 
     }

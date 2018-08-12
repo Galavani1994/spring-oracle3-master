@@ -1,8 +1,10 @@
 package com.developer.springOracle3.model.service;
 
 import com.developer.springOracle3.MyException;
+import com.developer.springOracle3.entity.CPtable;
 import com.developer.springOracle3.entity.Customer;
 import com.developer.springOracle3.entity.Production;
+import com.developer.springOracle3.model.repository.CPRepo;
 import com.developer.springOracle3.model.repository.CustomerRepo;
 import com.developer.springOracle3.model.repository.ProductionRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +17,10 @@ public class ProductionService {
 
     @Autowired
     private ProductionRepo productionRepo;
+    @Autowired
+    private CPRepo cpRepo;
 
     public void save(Production production) throws MyException {
-
 
         Production save = productionRepo.save(production);
 

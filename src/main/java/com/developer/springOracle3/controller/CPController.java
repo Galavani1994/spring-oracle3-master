@@ -1,11 +1,15 @@
 package com.developer.springOracle3.controller;
 
+import com.developer.springOracle3.MyException;
+import com.developer.springOracle3.entity.CPtable;
 import com.developer.springOracle3.model.repository.CPRepo;
 import com.developer.springOracle3.model.repository.CustomerRepo;
 import com.developer.springOracle3.model.repository.ProductionRepo;
+import com.developer.springOracle3.model.service.CPService;
 import com.developer.springOracle3.model.service.CustomerService;
 import com.developer.springOracle3.model.service.ProductionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,21 +30,42 @@ public class CPController {
     @Autowired
     private CPRepo cpRepo;
 
+    @Autowired
+    private CPService cpService;
+
     @RequestMapping("/showCustomer")
     public ModelAndView showCu(@RequestParam("cuid") String cuid) {
         ModelAndView mv = new ModelAndView("index");
         mv.addObject("listcu", customerRepo.findByCuid(cuid));
+        mv.addObject("listbycu", cpRepo.findByCuid(cuid));
         return mv;
     }
     @RequestMapping("/showproduction")
-    public ModelAndView showPr(@RequestParam("cuid") String cuid,@RequestParam("prid") String prid)
+    public ModelAndView showPr(@RequestParam("cuid") String cuid, @RequestParam("prid") String prid )
     {
         ModelAndView mv=new ModelAndView("index");
         mv.addObject("listcu", customerRepo.findByCuid(cuid));
         mv.addObject("listpr",prRepo.findByPrid(prid));
+        mv.addObject("listbycu", cpRepo.findByCuid(cuid));
 
         return mv;
     }
+
+    @RequestMapping("/saveCP")
+    public ModelAndView saveCu(@ModelAttribute CPtable cPtable,@RequestParam("cuid") String cuid) throws MyException {
+        ModelAndView mv = new ModelAndView("index");
+        cpService.save(cPtable);
+        mv.addObject("listcu", customerRepo.findByCuid(cuid));
+        mv.addObject("listbycu", cpRepo.findByCuid(cuid));
+        return mv;
+    }
+    @RequestMapping("/showCPtable")
+    public ModelAndView saveCu(){
+        ModelAndView mv=new ModelAndView("index");
+        mv.addObject("listcp",cpRepo.findAll());
+        return mv;
+    }
+
 
 
 }

@@ -1,17 +1,19 @@
 package com.developer.springOracle3.entity;
 
-
-import com.sun.javafx.beans.IDProperty;
-
-import javax.persistence.*;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Column;
+import javax.persistence.Table;
+import javax.persistence.Entity;
 
 @Entity
-@Table(name="CPtable")
-public class CPtable {
-
+@Table(name = "CP_table")
+public class CPtable
+{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Integer id;
     @Column
     private String cuid;
     @Column
@@ -19,7 +21,7 @@ public class CPtable {
     @Column
     private String prName;
     @Column
-    private String meter;
+    private String metercp;
     @Column
     private String price;
     @Column
@@ -33,38 +35,30 @@ public class CPtable {
     @Column
     private String remain;
     @Column
-    private String date;
+    private String kaladate;
 
     public CPtable() {
     }
 
-    public CPtable(String cuid, String prid, String prName, String meter, String price, String discount, String pay, String factore, String total, String remain) {
+    public CPtable(String cuid, String prid, String prName, String meter, String price, String discount, String pay, String factore, String total, String remain, String date) {
         this.cuid = cuid;
         this.prid = prid;
         this.prName = prName;
-        this.meter = meter;
+        this.metercp = meter;
         this.price = price;
         this.discount = discount;
         this.pay = pay;
         this.factore = factore;
         this.total = total;
         this.remain = remain;
-
+        this.kaladate = date;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public String getPay() {
-        return pay;
-    }
-
-    public void setPay(String pay) {
-        this.pay = pay;
-    }
-
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -92,12 +86,12 @@ public class CPtable {
         this.prName = prName;
     }
 
-    public String getMeter() {
-        return meter;
+    public String getMetercp() {
+        return metercp;
     }
 
-    public void setMeter(String meter) {
-        this.meter = meter;
+    public void setMetercp(String metercp) {
+        this.metercp = metercp;
     }
 
     public String getPrice() {
@@ -114,6 +108,14 @@ public class CPtable {
 
     public void setDiscount(String discount) {
         this.discount = discount;
+    }
+
+    public String getPay() {
+        return pay;
+    }
+
+    public void setPay(String pay) {
+        this.pay = pay;
     }
 
     public String getFactore() {
@@ -138,5 +140,13 @@ public class CPtable {
 
     public void setRemain(String remain) {
         this.remain = remain;
+    }
+
+    public String getKaladate() {
+        return kaladate;
+    }
+
+    public void setKaladate(String kaladate) {
+        this.kaladate = kaladate;
     }
 }
