@@ -19,4 +19,10 @@ public interface ProductionRepo extends JpaRepository<Production,Integer> {
 
     @Query("from Production where prid=?1")
     Production findByPrid(String prid);
+
+    @Query("from Production where meterPr=?1")
+    Production findByMeterPr(String meterPr);
+
+    @Query("SELECT pr.meterPr - nvl((select SUM(cp.metercp)from  CPtable cp where pr.prid=cp.prid ),0) FROM Production pr where pr.prid=?1")
+    int remainMeter(String prid);
 }

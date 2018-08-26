@@ -19,46 +19,62 @@ public class Production {
     @Column
     private String prName;
     @Column
-    private String meterPr;
+    private int meterPr;
+    @Transient
+    private  int remainMeter;
 
     public Production() {
     }
 
-    public Production(String prid, String prName, String meter) {
+    public Production(String prid, String prName, int meterPr, int remainMeter) {
         this.prid = prid;
         this.prName = prName;
-        this.meterPr = meter;
+        this.meterPr = meterPr;
+        this.remainMeter = remainMeter;
     }
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public Production setId(int id) {
         this.id = id;
+        return this;
     }
 
     public String getPrid() {
         return prid;
     }
 
-    public void setPrid(String prid) {
+    public Production setPrid(String prid) {
         this.prid = prid;
+        return this;
     }
 
     public String getPrName() {
         return prName;
     }
 
-    public void setPrName(String prName) {
+    public Production setPrName(String prName) {
         this.prName = prName;
+        return this;
     }
 
-    public String getMeterPr() {
+    public int getMeterPr() {
         return meterPr;
     }
 
-    public void setMeterPr(String meterPr) {
+    public Production setMeterPr(int meterPr) {
         this.meterPr = meterPr;
+        return this;
+    }
+
+    public int getRemainMeter() {
+        return remainMeter;
+    }
+
+    public Production setRemainMeter(int remainMeter) {
+        this.remainMeter = remainMeter;
+        return this;
     }
 }

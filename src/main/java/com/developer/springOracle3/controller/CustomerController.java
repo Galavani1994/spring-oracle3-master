@@ -1,16 +1,17 @@
 package com.developer.springOracle3.controller;
 
 import com.developer.springOracle3.MyException;
+import com.developer.springOracle3.annotation.ControllerViewName;
 import com.developer.springOracle3.entity.Customer;
 import com.developer.springOracle3.model.repository.CustomerRepo;
 import com.developer.springOracle3.model.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 @RestController
+@ControllerAdvice
+@ControllerViewName("customer")
 public class CustomerController {
 
     @Autowired
@@ -19,11 +20,6 @@ public class CustomerController {
     private CustomerRepo customerRepo;
 
 
-    @RequestMapping("/")
-    public ModelAndView index() {
-        ModelAndView mv = new ModelAndView("index");
-        return mv;
-    }
 
     @RequestMapping("/customerPage")
     public ModelAndView doHOme() {
@@ -47,7 +43,7 @@ public class CustomerController {
         if (!id.isEmpty()) {
             customer = customerRepo.getOne(Integer.parseInt(id));
             if (!customer.getCuid().equals(cuid)) {
-                throw new MyException();
+                throw new MyException("کدشخص قابل تغییر نمی باشد","1");
             }
 
         } else {
@@ -74,13 +70,10 @@ public class CustomerController {
         return mv;
     }
 
-
     @RequestMapping(value = "/resultCu", method = RequestMethod.GET)
     public ModelAndView showCu(@RequestParam("names") String firstName, @RequestParam("names") String lastName) {
         ModelAndView mv = new ModelAndView("customer");
         mv.addObject("lists", customerRepo.findByFirstNameORLastNameLike(firstName, lastName));
         return mv;
     }
-
-
 }

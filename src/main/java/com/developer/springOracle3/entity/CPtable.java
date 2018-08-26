@@ -1,16 +1,11 @@
 package com.developer.springOracle3.entity;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Column;
-import javax.persistence.Table;
-import javax.persistence.Entity;
+import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "CP_table")
-public class CPtable
-{
+public class CPtable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
@@ -35,12 +30,12 @@ public class CPtable
     @Column
     private String remain;
     @Column
-    private String kaladate;
+    private Date kaladate;
 
     public CPtable() {
     }
 
-    public CPtable(String cuid, String prid, String prName, String meter, String price, String discount, String pay, String factore, String total, String remain, String date) {
+    public CPtable(String cuid, String prid, String prName, String meter, String price, String discount, String pay, String factore, String total, String remain, Date date) {
         this.cuid = cuid;
         this.prid = prid;
         this.prName = prName;
@@ -58,95 +53,107 @@ public class CPtable
         return id;
     }
 
-    public void setId(Integer id) {
+    public CPtable setId(Integer id) {
         this.id = id;
+        return this;
     }
 
     public String getCuid() {
         return cuid;
     }
 
-    public void setCuid(String cuid) {
+    public CPtable setCuid(String cuid) {
         this.cuid = cuid;
+        return this;
     }
 
     public String getPrid() {
         return prid;
     }
 
-    public void setPrid(String prid) {
+    public CPtable setPrid(String prid) {
         this.prid = prid;
+        return this;
     }
 
     public String getPrName() {
         return prName;
     }
 
-    public void setPrName(String prName) {
+    public CPtable setPrName(String prName) {
         this.prName = prName;
+        return this;
     }
 
     public String getMetercp() {
         return metercp;
     }
 
-    public void setMetercp(String metercp) {
+    public CPtable setMetercp(String metercp) {
         this.metercp = metercp;
+        return this;
     }
 
     public String getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public CPtable setPrice(String price) {
         this.price = price;
+        return this;
     }
 
     public String getDiscount() {
         return discount;
     }
 
-    public void setDiscount(String discount) {
+    public CPtable setDiscount(String discount) {
         this.discount = discount;
+        return this;
     }
 
     public String getPay() {
         return pay;
     }
 
-    public void setPay(String pay) {
+    public CPtable setPay(String pay) {
         this.pay = pay;
+        return this;
     }
 
     public String getFactore() {
         return factore;
     }
 
-    public void setFactore(String factore) {
+    public CPtable setFactore(String factore) {
         this.factore = factore;
+        return this;
     }
 
     public String getTotal() {
         return total;
     }
 
-    public void setTotal(String total) {
+    public CPtable setTotal(String total) {
         this.total = total;
+        return this;
     }
 
     public String getRemain() {
         return remain;
     }
 
-    public void setRemain(String remain) {
+    public CPtable setRemain(String remain) {
         this.remain = remain;
+        return this;
     }
 
-    public String getKaladate() {
+    public Date getKaladate() {
         return kaladate;
     }
 
-    public void setKaladate(String kaladate) {
+    public CPtable setKaladate(Date kaladate) {
         this.kaladate = kaladate;
+        return this;
     }
 }

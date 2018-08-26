@@ -26,17 +26,6 @@ public interface CustomerRepo extends JpaRepository<Customer,Integer> {
     Customer findByCuid(String cuid);
 
 
-    /*@PersistenceContext
-    private EntityManager entityManager;
 
-    public void save(Customer customer)
-    {
-
-        entityManager.persist(customer);
-    }
-    public List<Customer> findAll()
-    {
-        return entityManager.createNativeQuery("SELECT * FROM customer",Customer.class).getResultList();
-    }*/
 
 }

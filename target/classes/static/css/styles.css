@@ -7,6 +7,7 @@
     background-color: #e0e0e0;
     text-align: center;
     font-family: "B Titr";
+    height: 120px;
 }
 #div1
 {
@@ -102,4 +103,9 @@ footer
 #divparent
 {
     margin-top: 0px;
+}
+#inputreport
+{
+    font-family:"B Titr";
+    font-size: medium;
 }

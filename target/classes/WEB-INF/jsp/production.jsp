@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="/css/css/bootstrap.css"/>
     <link rel="stylesheet" href="/css/css/bootstrap-rtl.css"/>
     <link rel="stylesheet" href="/css/css/bootstrap-rtl-theme.css"/>
+    <script src="/css/js/persian-date-convert.js"></script>
+
 
     <!-- Additional CSS -->
 
@@ -24,6 +26,20 @@
 
     <!--title-->
     <title>مدیریت کالا</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            tarikh();
+        }
+        function tarikh() {
+            var now = new Date();
+            var year = now.getFullYear();
+            var month = now.getMonth() + 1;
+            var day = now.getDate();
+
+            document.getElementById('tarikh').value = gregorian_to_jalali(year, month, day);
+            document.getElementById('tarikh1').value = gregorian_to_jalali(year, month, day);
+        }
+    </script>
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -44,13 +60,17 @@
             <li class="nav-item">
                 <a class="nav-link " href="/productionPage">مدیریت کالا</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/reportPage">گزارش گیری</a>
+            </li>
 
         </ul>
         <form class="form-inline my-2 my-lg-0" dir="ltr" action="/resultPr">
             <input class="form-control mr-sm-2" type="text" placeholder="جستجو" aria-label="Search" dir="rtl"
                    name="names">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">جستجو</button>
-            <a href="/productionPage">Refresh</a>
+            <a href="/productionPage">Refresh</a><p> " " </p>
+            <input type="text" id="tarikh" name="kaladate" style="text-align: center;font-family: 'B Titr'">
         </form>
     </div>
 </nav>
@@ -69,12 +89,15 @@
             <input type="text" name="prname"/><br/><br>
             متراژ:
             <br/>
-            <input type="text" name="metercp"><br/><br>
+            <input type="text" name="meterPr"><br/><br>
 
             <input type="submit" value="ثبت" class="btn btn-primary">
         </form>
     </aside>
     <aside class="col-lg-8">
+        <div style="text-align: center">
+            <label>کدخطای${exceptionMessage.errorCode}: ${exceptionMessage.errorMessage}</label>
+        </div>
         <div class="table-wrapper-scroll-y">
             <table id="tbl1" class="table table-bordered table-striped">
                 <tr>
@@ -89,9 +112,9 @@
                     <tr>
                         <form action="/savePr">
                             <td hidden><input type="hidden" name="id" value="${list.id}"></td>
-                            <td><input type="text" name="prid" style="width: 60px" value="${list.prid}" readonly></td>
+                            <td><input type="text" name="prid" style="width: 60px" value="${list.prid}" ></td>
                             <td><input type="text" name="prname" style="width: 90px" value="${list.prName}"></td>
-                            <td><input type="text" name="metercp" style="width: 90px" value="${list.metercp}"></td>
+                            <td><input type="text" name="meterPr" style="width: 90px" value="${list.meterPr}"></td>
                             </td>
                             <td>
                                 <input type="button" class="btn btn-primary" onclick="doo(${list.id}, 'delete')"

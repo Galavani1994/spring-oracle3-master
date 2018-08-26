@@ -1,7 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ page import="com.developer.springOracle3.entity.Customer" %>
-<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!doctype html>
@@ -19,6 +17,7 @@
     <link rel="stylesheet" href="/css/css/bootstrap.css"/>
     <link rel="stylesheet" href="/css/css/bootstrap-rtl.css"/>
     <link rel="stylesheet" href="/css/css/bootstrap-rtl-theme.css"/>
+    <script src="/css/js/persian-date-convert.js"></script>
 
     <!-- Additional CSS -->
 
@@ -26,6 +25,20 @@
 
     <!--title-->
     <title>مدیریت مشتری</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            tarikh();
+        }
+        function tarikh() {
+            var now = new Date();
+            var year = now.getFullYear();
+            var month = now.getMonth() + 1;
+            var day = now.getDate();
+
+            document.getElementById('tarikh').value = gregorian_to_jalali(year, month, day);
+            document.getElementById('tarikh1').value = gregorian_to_jalali(year, month, day);
+        }
+    </script>
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -46,13 +59,18 @@
             <li class="nav-item">
                 <a class="nav-link " href="/productionPage">مدیریت کالا</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/reportPage">گزارش گیری</a>
+            </li>
 
         </ul>
-        <form  class="form-inline my-2 my-lg-0" dir="ltr" action="/resultCu">
+        <form class="form-inline my-2 my-lg-0" dir="ltr" action="/resultCu">
             <input class="form-control mr-sm-2" type="text" placeholder="جستجو" aria-label="Search" dir="rtl"
                    name="names">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">جستجو</button>
             <a href="/customerPage">Refresh</a>
+            <p> " "</p>
+            <input type="text" id="tarikh" name="kaladate" style="text-align: center;font-family: 'B Titr'">
         </form>
     </div>
 </nav>
@@ -78,7 +96,12 @@
             <input type="submit" value="ثبت" class="btn btn-primary">
         </form>
     </aside>
+
     <aside class="col-lg-8">
+        <div style="height: 45px;text-align: center;">
+
+            <label style="text-align: center">کدخطای${exceptionMessage.errorCode}: ${exceptionMessage.errorMessage}</label>
+        </div>
         <div class="table-wrapper-scroll-y">
             <table id="tbl1" class="table table-bordered table-striped">
                 <tr>
@@ -93,13 +116,14 @@
                     <tr>
                         <form action="/saveCu">
                             <td hidden><input type="hidden" name="id" value="${list.id}"></td>
-                            <td><input type="text" name="cuid" style="width: 60px" value="${list.cuid}" readonly></td>
+                            <td><input type="text" name="cuid" style="width: 60px" value="${list.cuid}" ></td>
                             <td><input type="text" name="firstname" style="width: 90px" value="${list.firstName}"></td>
                             <td><input type="text" name="lastname" style="width: 90px" value="${list.lastName}"></td>
                             <td><input type="text" name="addressname" style="width: 120px" value="${list.addressname}">
                             </td>
                             <td>
-                                <input type="button"  class="btn btn-primary" onclick="doo(${list.id}, 'delete')" value="delete">
+                                <input type="button" class="btn btn-primary" onclick="doo(${list.id}, 'delete')"
+                                       value="delete">
                                 <input type="submit" id="editbtn" class="btn btn-primary" value="virayesh">
                             </td>
                         </form>
