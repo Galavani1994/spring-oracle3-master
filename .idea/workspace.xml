@@ -1,82 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="965c34b3-1474-4a7c-8cb6-b7f5256a95ec" name="Default" comment="in this sample select one customer and production are correct.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_jul_2_10_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_10_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/annotation/ControllerViewName.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/config/SwaggerConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ExceptionAdvice.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/MainController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/CPtableDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/ExceptionMessage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/FDate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/ObjectConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/404.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/report.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j2.properties" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_10_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_log4j2_2_0_3_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/MyException.class" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/MyException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CPController.class" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CPController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CustomerController.class" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CustomerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/ProductionController.class" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/ProductionController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/entity/CPtable.class" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/entity/CPtable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/entity/Production.class" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/entity/Production.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/CPRepo.class" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/CPRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/ProductionRepo.class" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/ProductionRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/service/CustomerService.class" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/service/CustomerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/service/ProductionService.class" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/service/ProductionService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="965c34b3-1474-4a7c-8cb6-b7f5256a95ec" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springOracle3.iml" afterPath="$PROJECT_DIR$/springOracle3.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/MyException.java" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/MyException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CPController.java" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CPController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ProductionController.java" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ProductionController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/CPtable.java" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/CPtable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Production.java" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Production.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CPRepo.java" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CPRepo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CustomerRepo.java" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CustomerRepo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/ProductionRepo.java" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/ProductionRepo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CPService.java" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CPService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CustomerService.java" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CustomerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/ProductionService.java" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/ProductionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/production.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/production.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/customer.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/customer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/production.jsp" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/production.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/styles.css" afterPath="$PROJECT_DIR$/target/classes/static/css/styles.css" />
     </list>
     <ignored path="$PROJECT_DIR$/src/main/resources/static/css/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -267,7 +193,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="68" />
     <option name="width" value="1300" />
     <option name="height" value="744" />
@@ -637,7 +563,7 @@
       <workItem from="1534854962023" duration="187000" />
       <workItem from="1535173544314" duration="16978000" />
       <workItem from="1535199876803" duration="606000" />
-      <workItem from="1535258999644" duration="3830000" />
+      <workItem from="1535258999644" duration="4471000" />
     </task>
     <task id="LOCAL-00001" summary="in this sample select one customer and production are correct.">
       <created>1533711534672</created>
@@ -653,14 +579,21 @@
       <option name="project" value="LOCAL" />
       <updated>1534052465567</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="in this sample select one customer and production are correct.">
+      <created>1535267526985</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1535267526985</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222322000" />
+    <option name="totallyTimeSpent" value="222963000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -876,6 +809,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,6 +963,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
