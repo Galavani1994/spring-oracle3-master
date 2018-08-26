@@ -75,6 +75,6 @@
     </div>
 </nav>
 
-<h1 style="text-align: center;font-family: 'B Titr'">تاریخی نباید خالی باشد</h1>
+<h1 style="text-align: center;font-family: 'B Titr'">تاریخ نباید خالی بماند</h1>
 </body>
 </html>
