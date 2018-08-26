@@ -57,6 +57,18 @@
             document.getElementById('tarikh').value = gregorian_to_jalali(year, month, day);
             document.getElementById('tarikh1').value = gregorian_to_jalali(year, month, day);
         }
+        function moneyCommaSep(ctrl)
+        {
+            var separator = ",";
+            var int = ctrl.value.replace ( new RegExp ( separator, "g" ), "" );
+            var regexp = new RegExp ( "\\B(\\d{3})(" + separator + "|$)" );
+            do
+            {
+                int = int.replace ( regexp, separator + "$1" );
+            }
+            while ( int.search ( regexp ) >= 0 )
+            ctrl.value = int;
+        }
     </script>
 
 </head>
@@ -199,15 +211,15 @@
             <input type="text" hidden name="exist" id="mex" onkeyup="minus()" value="${listpr.meterPr}" size="7">
             <input type="text" id="tarikh1" size="11" name="kaladate"><br/><br/>
             <label>قیمت واحد</label>
-            <input type="text" id="price" onkeyup="sum()" name="price" size="7" value="0">
+            <input type="text" id="price" onkeyup="sum();" name="price" size="7" value="0">
             <label>تخفیف</label>
-            <input type="text" name="discount" id="discount" onkeyup="sum()" value="0" size="7">
+            <input type="text" name="discount" id="discount" onkeyup="sum();" value="0" size="7">
             <label>وجه </label>
-            <input type="text" name="pay" id="pay" onkeyup="sum()" value="0" size="7">
+            <input type="text" name="pay" id="pay" onkeyup="sum();" value="0" size="7">
             <label>شماره فاکتور</label>
             <input type="text" name="factore" size="7">
             <label>مانده</label>
-            <input type="text" name="remain" id="tb3" size="7" value="0">
+            <input type="text" name="remain" id="tb3"  size="7" value="0">
             <input type="submit" value="ذخیره">
         </form>
     </div>

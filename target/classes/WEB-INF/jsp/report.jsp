@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="/css/css/bootstrap-rtl-theme.css"/>
     <script src="/css/js/persian-date-convert.js"></script>
 
+    <link rel="stylesheet" href="/css/js-persian-cal.css">
+    <script src="/css/js-persian-cal.min.js"></script>
+    <script src="/css/js/NumberFormat.js"></script>
 
     <!-- Additional CSS -->
 
@@ -30,7 +33,9 @@
     <script type="text/javascript">
         window.onload = function () {
             tarikh();
+
         }
+
 
         function tarikh() {
             var now = new Date();
@@ -41,6 +46,17 @@
             document.getElementById('tarikh').value = gregorian_to_jalali(year, month, day);
             document.getElementById('tarikh1').value = gregorian_to_jalali(year, month, day);
         }
+        
+        function number_3_3 (num, sep){
+            var number = typeof num === "number"? num.toString() : num,
+                separator = typeof sep === "undefined"? ',' : sep;
+            return number.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1"+separator);
+
+            document.getElementById().value=number_3_3(${salevalue});
+
+        }
+
+
     </script>
 </head>
 <body>
@@ -84,9 +100,9 @@
     <div id="inputreport" dir="rtl" style="background-color: antiquewhite">
         <form style="text-align:right" action="/resultreport" method="post">
             از تاریخ:
-            <input style="text-align: center" type="text" size="10" name="fromdate" value="">
+            <input style="text-align: center" type="text" size="10" name="fromdate" id="pcal1" value="">
             تاتاریخ:
-            <input style="text-align: center" type="text" size="10" name="todate" value="">
+            <input style="text-align: center" type="text" size="10" name="todate" id="pcal2" value="">
             <input type="submit" value="جستجو">
 
         </form>
@@ -118,11 +134,18 @@
             </c:forEach>
         </table>
     </div>
+
     <div>
         جمع فروش
-        <input readonly type="text" value="${salevalue}">
+        <input readonly type="text" id="sum" onclick="this.value=number_3_3(this.value)" value="${salevalue}">
+
+
     </div>
 </div>
+<script>
+    var objCal1 = new AMIB.persianCalendar( 'pcal1' );
+    var objCal2 = new AMIB.persianCalendar( 'pcal2' );
+</script>
 
 </body>
 </html>

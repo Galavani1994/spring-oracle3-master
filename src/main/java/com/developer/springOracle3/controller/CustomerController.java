@@ -25,7 +25,7 @@ public class CustomerController {
     public ModelAndView doHOme() {
         ModelAndView mv = new ModelAndView("customer");
         mv.addObject("lists", customerService.findAll());
-        return mv;
+        return  mv;
     }
 
     @RequestMapping("/saveCu")
