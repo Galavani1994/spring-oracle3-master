@@ -26,8 +26,6 @@ public class CPtable {
     @Column
     private String factore;
     @Column
-    private String total;
-    @Column
     private String remain;
     @Column
     private Date kaladate;
@@ -35,7 +33,7 @@ public class CPtable {
     public CPtable() {
     }
 
-    public CPtable(String cuid, String prid, String prName, String meter, String price, String discount, String pay, String factore, String total, String remain, Date date) {
+    public CPtable(String cuid, String prid, String prName, String meter, String price, String discount, String pay, String factore,  String remain, Date date) {
         this.cuid = cuid;
         this.prid = prid;
         this.prName = prName;
@@ -44,7 +42,6 @@ public class CPtable {
         this.discount = discount;
         this.pay = pay;
         this.factore = factore;
-        this.total = total;
         this.remain = remain;
         this.kaladate = date;
     }
@@ -130,14 +127,6 @@ public class CPtable {
         return this;
     }
 
-    public String getTotal() {
-        return total;
-    }
-
-    public CPtable setTotal(String total) {
-        this.total = total;
-        return this;
-    }
 
     public String getRemain() {
         return remain;

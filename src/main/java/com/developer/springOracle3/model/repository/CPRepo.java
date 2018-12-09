@@ -13,7 +13,6 @@ import java.util.Date;
 import java.util.List;
 
 @Repository
-@Transactional
 public interface CPRepo extends JpaRepository<CPtable,Integer> {
 
     @Query("from CPtable where cuid=?1")
@@ -26,5 +25,6 @@ public interface CPRepo extends JpaRepository<CPtable,Integer> {
     String findByPay(Date kaladate,Date todae);
 
 
-
+    @Query("select nvl(sum (remain),0) from CPtable where cuid=?1")
+    List<CPtable> findByMande(String cuid);
 }

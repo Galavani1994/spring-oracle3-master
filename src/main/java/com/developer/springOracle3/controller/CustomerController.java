@@ -9,9 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.List;
+import java.util.Optional;
+
 @RestController
 @ControllerAdvice
 @ControllerViewName("customer")
+@RequestMapping("/cu")
 public class CustomerController {
 
     @Autowired
@@ -20,52 +25,46 @@ public class CustomerController {
     private CustomerRepo customerRepo;
 
 
-
-    @RequestMapping("/customerPage")
+   /* @RequestMapping("/customerPage")
     public ModelAndView doHOme() {
         ModelAndView mv = new ModelAndView("customer");
         mv.addObject("lists", customerService.findAll());
-        return  mv;
+        return mv;
+    }*/
+    @RequestMapping("/customerPage")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public List<Customer> doHOmee() {
+
+        return customerService.findAll();
+
     }
 
     @RequestMapping("/saveCu")
-    public ModelAndView saveCu(
-            @RequestParam("id") String id,
-            @RequestParam("cuid") String cuid,
-            @RequestParam("firstname") String firstName,
-            @RequestParam("lastname") String lastName,
-            @RequestParam("addressname") String addressname) throws MyException {
-        ModelAndView mv = new ModelAndView("redirect:/customerPage"
-        );
+    public ModelAndView saveCu(@ModelAttribute Customer customer) throws MyException {
 
-        Customer customer;
-
-        if (!id.isEmpty()) {
-            customer = customerRepo.getOne(Integer.parseInt(id));
-            if (!customer.getCuid().equals(cuid)) {
-                throw new MyException("کدشخص قابل تغییر نمی باشد","1");
-            }
-
+        ModelAndView mv = new ModelAndView("redirect:/cu/customerPage");
+        if (customer.getId() != null) {
+            Optional<Customer> optionalCustomer = customerRepo.findById(customer.getId());
+            Customer customer1 = optionalCustomer.get();
+            customer1.setFirstName(customer.getFirstName());
+            customer1.setLastName(customer.getLastName());
+            customer1.setAddressname(customer.getAddressname());
+            customer1.setMande(customer.getMande());
+            customerService.save(customer1);
         } else {
-            customer = new Customer();
-
-            customer.setCuid(cuid);
+            customerService.save(customer);
         }
-
-        customer.setFirstName(firstName);
-        customer.setLastName(lastName);
-        customer.setAddressname(addressname);
-        customerService.save(customer);
 
         return mv;
     }
 
     @RequestMapping(value = "/deleteCu/{id}", method = RequestMethod.GET)
-    public ModelAndView deleteCu(@PathVariable("id") int id) {
-        ModelAndView mv = new ModelAndView("redirect:/customerPage");
+    public ModelAndView deleteCu(@PathVariable("id") int id, HttpServletRequest request) {
+        ModelAndView mv = new ModelAndView("redirect:/cu/customerPage");
         Customer customer = new Customer();
         customer.setId(id);
         customerService.delete(customer);
+
 
         return mv;
     }
@@ -73,7 +72,8 @@ public class CustomerController {
     @RequestMapping(value = "/resultCu", method = RequestMethod.GET)
     public ModelAndView showCu(@RequestParam("names") String firstName, @RequestParam("names") String lastName) {
         ModelAndView mv = new ModelAndView("customer");
-        mv.addObject("lists", customerRepo.findByFirstNameORLastNameLike(firstName, lastName));
+        mv.addObject("lists", customerService.findbylastnaeOrfirstname(firstName, lastName));
         return mv;
     }
+
 }

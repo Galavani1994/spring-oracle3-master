@@ -24,57 +24,11 @@
     <link rel="stylesheet" href="/css/styles.css"/>
 
     <!--title-->
-    <title>مدیریت مشتری</title>
-    <script type="text/javascript">
-        window.onload = function () {
-            tarikh();
-        }
-        function tarikh() {
-            var now = new Date();
-            var year = now.getFullYear();
-            var month = now.getMonth() + 1;
-            var day = now.getDate();
+    <title>عدم دسترسی</title>
 
-            document.getElementById('tarikh').value = gregorian_to_jalali(year, month, day);
-            document.getElementById('tarikh1').value = gregorian_to_jalali(year, month, day);
-        }
-    </script>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">ATA</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault" dir="rtl">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">صفحه اصلی <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/customerPage">مدیریت مشتری</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/productionPage">مدیریت کالا</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/reportPage">گزارش گیری</a>
-            </li>
-
-        </ul>
-        <form class="form-inline my-2 my-lg-0" dir="ltr" action="/resultCu">
-            <input class="form-control mr-sm-2" type="text" placeholder="جستجو" aria-label="Search" dir="rtl"
-                   name="names">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">جستجو</button>
-            <a href="/customerPage">Refresh</a>
-            <p> " "</p>
-            <input type="text" id="tarikh" name="kaladate" style="text-align: center;font-family: 'B Titr'">
-        </form>
-    </div>
-</nav>
-
-<h1 style="text-align: center;font-family: 'B Titr'">تاریخ نباید خالی بماند</h1>
+<h1 style="text-align: center;margin-top: 80px">403</h1>
+<h2 style="text-align: center">Access Denied</h2>
 </body>
 </html>

@@ -21,9 +21,11 @@
 #frm1
 {
     width: 300px;
-    height: 300px;
+    height: auto;
     background-color: #1ce2ff;
     text-align: center;
+    padding-bottom: 10px;
+    padding-top: 5px;
 
 }
 #frm2{
@@ -86,11 +88,15 @@ footer
     background-color: burlywood;
     padding-top: 15px;
 }
+#divchild1 input
+{
+    Border-radius:5px;
+}
 #divchild2
 {
     width:100%;
-    height: 150px;
-    background-color: bisque;
+    height: 300px;
+    background-color: cadetblue;
     padding-top: 10px;
 }
 #divchild3
@@ -108,4 +114,17 @@ footer
 {
     font-family:"B Titr";
     font-size: medium;
+}
+
+.float {
+    position: absolute;
+    z-index: 2;
+}
+
+.form {
+    margin-left: 145px;
+}
+#frm1 input
+{
+    Border-radius:15px 0px 0px;
 }

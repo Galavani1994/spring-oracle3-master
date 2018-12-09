@@ -1,6 +1,5 @@
 package com.developer.springOracle3.entity;
 
-import javax.persistence.*;
 import java.util.Date;
 
 

@@ -1,21 +1,36 @@
 package com.developer.springOracle3.controller;
 
+import com.developer.springOracle3.entity.CPtableDto;
 import com.developer.springOracle3.model.repository.CPRepo;
 import com.developer.springOracle3.model.service.CPService;
+import com.developer.springOracle3.util.GeneratePdfReport;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.List;
 
-@Controller
+@RestController
+@RequestMapping("/rp")
 public class ReportController {
     @Autowired
     CPRepo cpRepo;
     @Autowired
     CPService cpService;
+
+
+
 
     @RequestMapping("/reportPage")
     public ModelAndView reportpage() {
@@ -34,6 +49,31 @@ public class ReportController {
             return mv;
         }
     }
+
+    @RequestMapping(value = "/print_report",method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_PDF_VALUE)
+    public ResponseEntity<InputStreamResource> saleReport(@RequestParam("fromdate") String kaladate,
+                                                          @RequestParam("todate") String todate) throws IOException, ParseException {
+
+        List<CPtableDto> list=cpService.findbykaladate(kaladate,todate);
+        List<String> betweenDate=new ArrayList<>();
+        betweenDate.add(kaladate);
+        betweenDate.add(todate);
+
+
+        ByteArrayInputStream bis = GeneratePdfReport.salesReport(list,betweenDate);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("Content-Disposition", "inline; filename=reportFile.pdf");
+
+        return ResponseEntity
+                .ok()
+                .headers(headers)
+                .contentType(MediaType.APPLICATION_PDF)
+                .body(new InputStreamResource(bis));
+    }
+
+
 
 
 }

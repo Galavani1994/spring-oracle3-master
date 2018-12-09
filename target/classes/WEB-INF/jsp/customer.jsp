@@ -29,6 +29,7 @@
         window.onload = function () {
             tarikh();
         }
+
         function tarikh() {
             var now = new Date();
             var year = now.getFullYear();
@@ -41,67 +42,45 @@
     </script>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">ATA</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault" dir="rtl">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">صفحه اصلی <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/customerPage">مدیریت مشتری</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/productionPage">مدیریت کالا</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/reportPage">گزارش گیری</a>
-            </li>
-
-        </ul>
-        <form class="form-inline my-2 my-lg-0" dir="ltr" action="/resultCu">
-            <input class="form-control mr-sm-2" type="text" placeholder="جستجو" aria-label="Search" dir="rtl"
-                   name="names">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">جستجو</button>
-            <a href="/customerPage">Refresh</a>
-            <p> " "</p>
-            <input type="text" id="tarikh" name="kaladate" style="text-align: center;font-family: 'B Titr'">
-        </form>
-    </div>
-</nav>
+<%@include file="header.jsp" %>
 <div id="div0" class="container">
+    <div class="row">
+        <div>
+            <form:form action="/cu/resultCu" method="get">
+                <input class="form-control mr-sm-2" type="text" placeholder="جستجو مشتری" aria-label="Search" dir="rtl" name="names">
+                <input type="submit" hidden>
+            </form:form>
+        </div>
+        <div>
+            <a href="/cu/customerPage"><img style="margin-right: 10px;margin-top: 8px" src="/open-iconic-master/png/reload.png"></a>
+        </div>
+    </div>
     <h1>مدیریت مشتری</h1>
 </div>
 <div id="div1" class="container" class="row">
     <aside class="col-lg-4">
-        <form id="frm1" method="post" action="/saveCu">
+        <form id="frm1" method="post" action="/cu/saveCu">
             <input type="hidden" name="id" value="">
             کدمشتری:
             <br/>
             <input type="text" name="cuid"/><br/><br>
             نام:
             <br/>
-            <input type="text" name="firstname"/><br/><br>
+            <input type="text" name="firstName"/><br/><br>
             نام خانوادگی:
             <br/>
-            <input type="text" name="lastname"><br/><br>
+            <input type="text" name="lastName"><br/><br>
             آدرس:
             <br/>
-            <input type="text" name="addressname"><br/><br/>
+            <input type="text" name="addressname"><br/>
+            <input type="text" hidden name="mande" value="0"><br/>
             <input type="submit" value="ثبت" class="btn btn-primary">
         </form>
     </aside>
 
     <aside class="col-lg-8">
-        <div style="height: 45px;text-align: center;">
 
-            <label style="text-align: center">کدخطای${exceptionMessage.errorCode}: ${exceptionMessage.errorMessage}</label>
-        </div>
+
         <div class="table-wrapper-scroll-y">
             <table id="tbl1" class="table table-bordered table-striped">
                 <tr>
@@ -109,18 +88,20 @@
                     <td>نام</td>
                     <td>نام خانوادگی</td>
                     <td>آدرس</td>
+                    <td>مانده حساب</td>
                     <td>عملیات</td>
                 </tr>
                 <c:forEach var="list" items="${lists}">
 
                     <tr>
-                        <form action="/saveCu">
+                        <form action="/cu/saveCu">
                             <td hidden><input type="hidden" name="id" value="${list.id}"></td>
-                            <td><input type="text" name="cuid" style="width: 60px" value="${list.cuid}" ></td>
-                            <td><input type="text" name="firstname" style="width: 90px" value="${list.firstName}"></td>
-                            <td><input type="text" name="lastname" style="width: 90px" value="${list.lastName}"></td>
+                            <td><input type="text" name="cuid" style="width: 60px" value="${list.cuid}"></td>
+                            <td><input type="text" name="firstName" style="width: 90px" value="${list.firstName}"></td>
+                            <td><input type="text" name="lastName" style="width: 90px" value="${list.lastName}"></td>
                             <td><input type="text" name="addressname" style="width: 120px" value="${list.addressname}">
                             </td>
+                            <td><input type="text" name="mande" size="9" value="${list.mande}"></td>
                             <td>
                                 <input type="button" class="btn btn-primary" onclick="doo(${list.id}, 'delete')"
                                        value="delete">
@@ -135,7 +116,7 @@
 
                         switch (operate) {
                             case 'delete':
-                                location.href = "/deleteCu/" + id;
+                                location.href = "/cu/deleteCu/" + id;
                                 break;
                         }
                     }

@@ -25,6 +25,17 @@
     <script src="/css/js/NumberFormat.js"></script>
 
     <!-- Additional CSS -->
+    <link rel="stylesheet" href="/css/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/css/bootstrap-rtl.css"/>
+    <link rel="stylesheet" href="/css/css/bootstrap-rtl-theme.css"/>
+
+    <!-- Additional CSS -->
+
+    <link rel="stylesheet" href="/css/styles.css"/>
+
+    <script src="/css/jquery/jquery-ui-min/jquery-ui-min.js"></script>
+    <script src="/css/jquery/jquery-3.3.1.js"></script>
+    <script src="/css/js/persian-date-convert.js"></script>
 
     <link rel="stylesheet" href="/css/styles.css"/>
 
@@ -60,52 +71,28 @@
     </script>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">ATA</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault" dir="rtl">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">صفحه اصلی <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/customerPage">مدیریت مشتری</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/productionPage">مدیریت کالا</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/reportPage">گزارش گیری</a>
-            </li>
-
-        </ul>
-        <form class="form-inline my-2 my-lg-0" dir="ltr" action="/resultPr">
-            <input class="form-control mr-sm-2" type="text" placeholder="جستجو" aria-label="Search" dir="rtl"
-                   name="names">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">جستجو</button>
-            <a href="/reportPage">Refresh</a>
-            <p> " " </p>
-            <input type="text" id="tarikh" name="kaladate" style="text-align: center;font-family: 'B Titr'">
-        </form>
-    </div>
-</nav>
+<%@include file="header.jsp" %>
 <div class="container">
     <div id="div0">
         <h1>گزارشگیری</h1>
     </div>
     <div id="inputreport" dir="rtl" style="background-color: antiquewhite">
-        <form style="text-align:right" action="/resultreport" method="post">
-            از تاریخ:
-            <input style="text-align: center" type="text" size="10" name="fromdate" id="pcal1" value="">
-            تاتاریخ:
-            <input style="text-align: center" type="text" size="10" name="todate" id="pcal2" value="">
-            <input type="submit" value="جستجو">
+        <aside>
+            <form style="text-align:right" action="${pageContext.request.contextPath}/rp/resultreport" method="post">
+                از تاریخ:
+                <input style="text-align: center" type="text" size="10" name="fromdate" id="pcal1" value="">
+                تاتاریخ:
+                <input style="text-align: center" type="text" size="10" name="todate" id="pcal2" value="">
+                <input type="submit" value="جستجو">
 
-        </form>
+            </form>
+        </aside>
+        <aside>
+            <form>
+
+                <input type="submit" value="جستجوی کالا">
+            </form>
+        </aside>
     </div>
 
     <div class="table-wrapper-scroll-y" style="width: 100%;height: 180px;">
@@ -141,10 +128,20 @@
 
 
     </div>
+    <br>
+    <div>
+        <form action="/rp/print_report">
+            از<input style="text-align: center;margin-right: 20px" type="text" size="10" name="fromdate" id="pcal3" value="">
+            تا<input style="text-align: center" type="text" size="10" name="todate" id="pcal4" value="">
+            <input type="submit" value="چاپ گزارش">
+        </form>
+    </div>
 </div>
 <script>
     var objCal1 = new AMIB.persianCalendar( 'pcal1' );
     var objCal2 = new AMIB.persianCalendar( 'pcal2' );
+    var objCal3 = new AMIB.persianCalendar( 'pcal3' );
+    var objCal4 = new AMIB.persianCalendar( 'pcal4' );
 </script>
 
 </body>
