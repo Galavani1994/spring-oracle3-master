@@ -4,6 +4,7 @@ package com.developer.springOracle3.entity;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "customer")
@@ -21,7 +22,19 @@ public class Customer {
     @Column
     private String addressname;
     @Column
-    private int mande;
+    private Integer mande;
+    @Column
+    private Integer mobileNum;
+    @Column
+    private Integer phoneNum;
+    @Column
+    private String descreption;
+    @Column
+    private String zamen;
+    @Column
+    private Date registerDate;
+    @Column
+    private Date lastCome;
 
 
 }

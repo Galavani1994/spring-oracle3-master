@@ -38,9 +38,34 @@ public class CustomerController {
         return customerService.findAll();
 
     }
+    @RequestMapping("/customerPage1")
+    public List<Customer> doHOmee1() {
+
+        return customerService.findAll();
+
+    }
 
     @RequestMapping("/saveCu")
-    public ModelAndView saveCu(@ModelAttribute Customer customer) throws MyException {
+    @CrossOrigin(origins = "http://localhost:4200")
+    public ModelAndView saveCu(@RequestBody Customer customer) throws MyException {
+
+        ModelAndView mv = new ModelAndView("redirect:/cu/customerPage");
+        if (customer.getId() != null) {
+            Optional<Customer> optionalCustomer = customerRepo.findById(customer.getId());
+            Customer customer1 = optionalCustomer.get();
+            customer1.setFirstName(customer.getFirstName());
+            customer1.setLastName(customer.getLastName());
+            customer1.setAddressname(customer.getAddressname());
+            customer1.setMande(customer.getMande());
+            customerService.save(customer1);
+        } else {
+            customerService.save(customer);
+        }
+
+        return mv;
+    }
+    @RequestMapping("/saveCu1")
+    public ModelAndView saveCu1(@ModelAttribute Customer customer) throws MyException {
 
         ModelAndView mv = new ModelAndView("redirect:/cu/customerPage");
         if (customer.getId() != null) {

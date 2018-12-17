@@ -45,6 +45,7 @@ public class ConfigSecurity extends WebSecurityConfigurerAdapter {
                 .antMatchers("/pr/savePr").permitAll()
                 .antMatchers("/pr/deletePr/{id}").permitAll()
                 .antMatchers("/cu/customerPage").permitAll()
+                .antMatchers("/cu/saveCu").permitAll()
                 .antMatchers("/").authenticated()
                 .antMatchers("/cu/**", "/pr/**", "/rp/**").hasRole("admin").anyRequest().authenticated()
                 .and()
