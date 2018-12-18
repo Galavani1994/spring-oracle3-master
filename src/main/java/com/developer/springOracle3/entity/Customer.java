@@ -24,9 +24,9 @@ public class Customer {
     @Column
     private Integer mande;
     @Column
-    private Integer mobileNum;
+    private String mobileNum;
     @Column
-    private Integer phoneNum;
+    private String phoneNum;
     @Column
     private String descreption;
     @Column

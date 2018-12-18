@@ -22,7 +22,7 @@ public class CustomerService {
 
     public void save(Customer customer) throws MyException {
 
-        cpRepo.findByCuid(customer.getCuid());
+        
         Customer save = customerRepo.save(customer);
 
     }

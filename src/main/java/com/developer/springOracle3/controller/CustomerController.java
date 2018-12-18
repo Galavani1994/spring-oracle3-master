@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -50,6 +51,8 @@ public class CustomerController {
     public ModelAndView saveCu(@RequestBody Customer customer) throws MyException {
 
         ModelAndView mv = new ModelAndView("redirect:/cu/customerPage");
+        List<Customer> te=new ArrayList<>();
+        te.add(customer);
         if (customer.getId() != null) {
             Optional<Customer> optionalCustomer = customerRepo.findById(customer.getId());
             Customer customer1 = optionalCustomer.get();
@@ -59,6 +62,7 @@ public class CustomerController {
             customer1.setMande(customer.getMande());
             customerService.save(customer1);
         } else {
+            customer.setMande(0);
             customerService.save(customer);
         }
 
