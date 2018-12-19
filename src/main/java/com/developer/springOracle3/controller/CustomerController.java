@@ -26,12 +26,12 @@ public class CustomerController {
     private CustomerRepo customerRepo;
 
 
-   /* @RequestMapping("/customerPage")
-    public ModelAndView doHOme() {
-        ModelAndView mv = new ModelAndView("customer");
-        mv.addObject("lists", customerService.findAll());
-        return mv;
-    }*/
+    /* @RequestMapping("/customerPage")
+     public ModelAndView doHOme() {
+         ModelAndView mv = new ModelAndView("customer");
+         mv.addObject("lists", customerService.findAll());
+         return mv;
+     }*/
     @RequestMapping("/customerPage")
     @CrossOrigin(origins = "http://localhost:4200")
     public List<Customer> doHOmee() {
@@ -39,6 +39,7 @@ public class CustomerController {
         return customerService.findAll();
 
     }
+
     @RequestMapping("/customerPage1")
     public List<Customer> doHOmee1() {
 
@@ -51,16 +52,10 @@ public class CustomerController {
     public ModelAndView saveCu(@RequestBody Customer customer) throws MyException {
 
         ModelAndView mv = new ModelAndView("redirect:/cu/customerPage");
-        List<Customer> te=new ArrayList<>();
+        List<Customer> te = new ArrayList<>();
         te.add(customer);
         if (customer.getId() != null) {
-            Optional<Customer> optionalCustomer = customerRepo.findById(customer.getId());
-            Customer customer1 = optionalCustomer.get();
-            customer1.setFirstName(customer.getFirstName());
-            customer1.setLastName(customer.getLastName());
-            customer1.setAddressname(customer.getAddressname());
-            customer1.setMande(customer.getMande());
-            customerService.save(customer1);
+            customerService.save(customer);
         } else {
             customer.setMande(0);
             customerService.save(customer);
@@ -68,6 +63,7 @@ public class CustomerController {
 
         return mv;
     }
+
     @RequestMapping("/saveCu1")
     public ModelAndView saveCu1(@ModelAttribute Customer customer) throws MyException {
 
@@ -88,7 +84,19 @@ public class CustomerController {
     }
 
     @RequestMapping(value = "/deleteCu/{id}", method = RequestMethod.GET)
+    @CrossOrigin(origins = "http://localhost:4200")
     public ModelAndView deleteCu(@PathVariable("id") int id, HttpServletRequest request) {
+        ModelAndView mv = new ModelAndView("redirect:/cu/customerPage");
+        Customer customer = new Customer();
+        customer.setId(id);
+        customerService.delete(customer);
+
+
+        return mv;
+    }
+
+    @RequestMapping(value = "/deleteCu1/{id}", method = RequestMethod.GET)
+    public ModelAndView deleteCu1(@PathVariable("id") int id, HttpServletRequest request) {
         ModelAndView mv = new ModelAndView("redirect:/cu/customerPage");
         Customer customer = new Customer();
         customer.setId(id);
