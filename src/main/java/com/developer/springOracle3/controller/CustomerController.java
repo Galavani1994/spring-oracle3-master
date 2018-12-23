@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,13 +25,7 @@ public class CustomerController {
     private CustomerRepo customerRepo;
 
 
-    /* @RequestMapping("/customerPage")
-     public ModelAndView doHOme() {
-         ModelAndView mv = new ModelAndView("customer");
-         mv.addObject("lists", customerService.findAll());
-         return mv;
-     }*/
-    @RequestMapping("/customerPage")
+    @GetMapping("/customerPage")
     @CrossOrigin(origins = "http://localhost:4200")
     public List<Customer> doHOmee() {
 
@@ -40,31 +33,28 @@ public class CustomerController {
 
     }
 
-    @RequestMapping("/customerPage1")
+    @GetMapping("/customerPage1")
     public List<Customer> doHOmee1() {
 
         return customerService.findAll();
+        }
 
-    }
 
-    @RequestMapping("/saveCu")
+    @PostMapping("/saveCu")
     @CrossOrigin(origins = "http://localhost:4200")
     public ModelAndView saveCu(@RequestBody Customer customer) throws MyException {
 
-        ModelAndView mv = new ModelAndView("redirect:/cu/customerPage");
-        List<Customer> te = new ArrayList<>();
-        te.add(customer);
-        if (customer.getId() != null) {
+        if (customer.getId() == null) {
+            customer.setMande(0l);
             customerService.save(customer);
         } else {
-            customer.setMande(0);
             customerService.save(customer);
         }
-
-        return mv;
+        return new ModelAndView("redirect:/cu/customerPage");
     }
 
-    @RequestMapping("/saveCu1")
+
+    @PostMapping("/saveCu1")
     public ModelAndView saveCu1(@ModelAttribute Customer customer) throws MyException {
 
         ModelAndView mv = new ModelAndView("redirect:/cu/customerPage");
@@ -112,5 +102,6 @@ public class CustomerController {
         mv.addObject("lists", customerService.findbylastnaeOrfirstname(firstName, lastName));
         return mv;
     }
+
 
 }

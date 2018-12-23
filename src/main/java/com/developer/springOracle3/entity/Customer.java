@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "customer")
@@ -22,7 +23,7 @@ public class Customer {
     @Column
     private String addressname;
     @Column
-    private Integer mande;
+    private Long mande;
     @Column
     private String mobileNum;
     @Column
@@ -30,11 +31,12 @@ public class Customer {
     @Column
     private String descreption;
     @Column
-    private String zamen;
-    @Column
     private Date registerDate;
     @Column
     private Date lastCome;
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "customerId")
+    private List<Zamen> zamen;
 
 
 }

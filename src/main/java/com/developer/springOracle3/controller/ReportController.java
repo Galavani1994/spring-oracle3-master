@@ -1,6 +1,7 @@
 package com.developer.springOracle3.controller;
 
 import com.developer.springOracle3.entity.CPtableDto;
+import com.developer.springOracle3.entity.Zamen;
 import com.developer.springOracle3.model.repository.CPRepo;
 import com.developer.springOracle3.model.service.CPService;
 import com.developer.springOracle3.util.GeneratePdfReport;
@@ -9,10 +10,7 @@ import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.ByteArrayInputStream;
@@ -30,8 +28,6 @@ public class ReportController {
     CPService cpService;
 
 
-
-
     @RequestMapping("/reportPage")
     public ModelAndView reportpage() {
         ModelAndView model = new ModelAndView("report");
@@ -43,25 +39,25 @@ public class ReportController {
         ModelAndView mv = new ModelAndView("report");
         if (!kaladate.isEmpty() && !todate.isEmpty()) {
             mv.addObject("listcpbydate", cpService.findbykaladate(kaladate, todate));
-            mv.addObject("salevalue",cpService.findsale(kaladate, todate));
+            mv.addObject("salevalue", cpService.findsale(kaladate, todate));
             return mv;
         } else {
             return mv;
         }
     }
 
-    @RequestMapping(value = "/print_report",method = RequestMethod.GET,
+    @RequestMapping(value = "/print_report", method = RequestMethod.GET,
             produces = MediaType.APPLICATION_PDF_VALUE)
     public ResponseEntity<InputStreamResource> saleReport(@RequestParam("fromdate") String kaladate,
                                                           @RequestParam("todate") String todate) throws IOException, ParseException {
 
-        List<CPtableDto> list=cpService.findbykaladate(kaladate,todate);
-        List<String> betweenDate=new ArrayList<>();
+        List<CPtableDto> list = cpService.findbykaladate(kaladate, todate);
+        List<String> betweenDate = new ArrayList<>();
         betweenDate.add(kaladate);
         betweenDate.add(todate);
 
 
-        ByteArrayInputStream bis = GeneratePdfReport.salesReport(list,betweenDate);
+        ByteArrayInputStream bis = GeneratePdfReport.salesReport(list, betweenDate);
 
         HttpHeaders headers = new HttpHeaders();
         headers.add("Content-Disposition", "inline; filename=reportFile.pdf");
@@ -73,7 +69,13 @@ public class ReportController {
                 .body(new InputStreamResource(bis));
     }
 
-
+    @PostMapping("/resultTest")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public ResponseEntity<Zamen> testclient(@RequestBody Zamen zamen) {
+        zamen.getZamenName();
+        zamen.setZamenFamily("mahdi");
+        return ResponseEntity.ok(zamen);
+    }
 
 
 }
