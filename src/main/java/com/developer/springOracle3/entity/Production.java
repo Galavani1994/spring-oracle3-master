@@ -22,9 +22,9 @@ public class Production {
     @Column
     private String prName;
     @Column
-    private int meterPr;
+    private Integer meterPr;
     @Transient
-    private  int remainMeter;
+    private  Integer remainMeter;
     @Column
     private Date tarikh;
 

@@ -11,7 +11,7 @@ import java.util.List;
 
 @Repository
 @CrossOrigin(origins = "http://localhost:4200")
-public interface ProductionRepo extends JpaRepository<Production,Integer> {
+public interface ProductionRepo extends JpaRepository<Production, Integer> {
 
     @Query("from Production where prName like %?1% ")
     List<Production> findByFirstNameORLastNameLike(String prName);
@@ -23,5 +23,5 @@ public interface ProductionRepo extends JpaRepository<Production,Integer> {
     Production findByMeterPr(String meterPr);
 
     @Query("SELECT pr.meterPr - nvl((select SUM(cp.metercp)from  CPtable cp where pr.prid=cp.prid ),0) FROM Production pr where pr.prid=?1")
-    int remainMeter(String prid);
+    Integer remainMeter(String prid);
 }

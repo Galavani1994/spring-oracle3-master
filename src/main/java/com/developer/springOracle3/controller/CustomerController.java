@@ -85,6 +85,12 @@ public class CustomerController {
         return mv;
     }
 
+    @GetMapping("/findOneCustomer/{id}")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public Customer findOneCustomer(@PathVariable("id") String id){
+        return customerRepo.findByCuid(id);
+    }
+
     @RequestMapping(value = "/deleteCu1/{id}", method = RequestMethod.GET)
     public ModelAndView deleteCu1(@PathVariable("id") int id, HttpServletRequest request) {
         ModelAndView mv = new ModelAndView("redirect:/cu/customerPage");

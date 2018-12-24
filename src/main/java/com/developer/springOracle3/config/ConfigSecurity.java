@@ -41,6 +41,7 @@ public class ConfigSecurity extends WebSecurityConfigurerAdapter {
                         "/swagger-resources/configuration/ui",
                         "/swagger-resources/configuration/security",
                         "/templates/doc/**").permitAll()
+                .antMatchers("/**").permitAll()
                 .antMatchers("/pr/productionPage").permitAll()
                 .antMatchers("/pr/savePr").permitAll()
                 .antMatchers("/pr/deletePr/{id}").permitAll()

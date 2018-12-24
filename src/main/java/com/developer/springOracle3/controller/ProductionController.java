@@ -110,16 +110,15 @@ public class ProductionController {
 
         return mv;
     }
-  /*  @RequestMapping(value = "/deletePr1/{id}", method = RequestMethod.GET)
-    public ModelAndView deletePr1(@PathVariable("id") int id) {
-        ModelAndView mv = new ModelAndView("redirect:/pr/productionPage1");
-        Production production = new Production();
-        production.setId(id);
-        prService.delete(production);
 
-        return mv;
-    }*/
-
+    @GetMapping("/findOneProduction/{id}")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public Production findOneProduction(@PathVariable("id") String id){
+        Production production=null;
+        production=prRepo.findByPrid(id);
+        production.setRemainMeter(prRepo.remainMeter(id));
+        return production;
+    }
 
     @RequestMapping(value = "/resultPr", method = RequestMethod.GET)
     public ModelAndView showCu(@RequestParam("names") String firstName) {
