@@ -3,13 +3,14 @@ package com.developer.springOracle3.controller;
 import com.developer.springOracle3.MyException;
 import com.developer.springOracle3.annotation.ControllerViewName;
 import com.developer.springOracle3.entity.Customer;
+import com.developer.springOracle3.model.repository.CPRepo;
 import com.developer.springOracle3.model.repository.CustomerRepo;
 import com.developer.springOracle3.model.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -23,6 +24,8 @@ public class CustomerController {
     private CustomerService customerService;
     @Autowired
     private CustomerRepo customerRepo;
+    @Autowired
+    private CPRepo cpRepo;
 
 
     @GetMapping("/customerPage")
@@ -37,7 +40,7 @@ public class CustomerController {
     public List<Customer> doHOmee1() {
 
         return customerService.findAll();
-        }
+    }
 
 
     @PostMapping("/saveCu")
@@ -75,32 +78,23 @@ public class CustomerController {
 
     @RequestMapping(value = "/deleteCu/{id}", method = RequestMethod.GET)
     @CrossOrigin(origins = "http://localhost:4200")
-    public ModelAndView deleteCu(@PathVariable("id") int id, HttpServletRequest request) {
-        ModelAndView mv = new ModelAndView("redirect:/cu/customerPage");
-        Customer customer = new Customer();
-        customer.setId(id);
-        customerService.delete(customer);
+    public void deleteCu(@PathVariable("id") int id) {
 
-
-        return mv;
+        Customer customer = customerRepo.findById(id).get();
+        String cuid = customer.getCuid();
+        customerRepo.deleteById(id);
+        cpRepo.deleteByCuid(cuid);
     }
 
     @GetMapping("/findOneCustomer/{id}")
     @CrossOrigin(origins = "http://localhost:4200")
-    public Customer findOneCustomer(@PathVariable("id") String id){
-        return customerRepo.findByCuid(id);
+    public List<Object> findOneCustomer(@PathVariable("id") String id) {
+        List<Object> objects = new ArrayList<>();
+        objects.add(customerRepo.findByCuid(id));
+        objects.add(cpRepo.findByCuid(id));
+        return objects;
     }
 
-    @RequestMapping(value = "/deleteCu1/{id}", method = RequestMethod.GET)
-    public ModelAndView deleteCu1(@PathVariable("id") int id, HttpServletRequest request) {
-        ModelAndView mv = new ModelAndView("redirect:/cu/customerPage");
-        Customer customer = new Customer();
-        customer.setId(id);
-        customerService.delete(customer);
-
-
-        return mv;
-    }
 
     @RequestMapping(value = "/resultCu", method = RequestMethod.GET)
     public ModelAndView showCu(@RequestParam("names") String firstName, @RequestParam("names") String lastName) {

@@ -24,7 +24,7 @@ public class Production {
     @Column
     private Integer meterPr;
     @Transient
-    private  Integer remainMeter;
+    private Double remainMeter;
     @Column
     private Date tarikh;
 

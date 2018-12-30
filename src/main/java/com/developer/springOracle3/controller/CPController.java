@@ -10,7 +10,6 @@ import com.developer.springOracle3.model.service.CPService;
 import com.developer.springOracle3.model.service.CustomerService;
 import com.developer.springOracle3.model.service.ProductionService;
 import com.developer.springOracle3.util.FDate;
-import com.developer.springOracle3.util.MyException2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -61,9 +60,23 @@ public class CPController {
 
         return mv;
     }
+    @PostMapping("/editcp")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public void edited(@RequestBody CPtable cPtable) throws ParseException {
 
-    @RequestMapping("/saveCP")
-    public ModelAndView saveCu(@ModelAttribute CPtable cPtable) throws MyException2, ParseException {
+        Customer customer = customerRepo.findByCuid(cPtable.getCuid());
+        if (cPtable.getFactore().equals("0"))
+        {
+            customer.setMande(customer.getMande()+Integer.parseInt(cPtable.getPay()));
+        }else {
+            customer.setMande(customer.getMande() - Integer.parseInt(cPtable.getRemain()));
+        }
+        customerRepo.save(customer);
+
+    }
+    @PostMapping("/saveCP")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public void saveCu(@RequestBody CPtable cPtable) throws  ParseException {
 
         ModelAndView mv = new ModelAndView("indexpage");
         if (cPtable.getId() != null) {
@@ -100,45 +113,16 @@ public class CPController {
 
         mv.addObject("listcu", customerRepo.findByCuid(cPtable.getCuid()));
         mv.addObject("listbycu", cpService.findByCuid(cPtable.getCuid()));
-        return mv;
-    }
 
-    @RequestMapping("/showCPtable")
-    public ModelAndView saveCu() {
-        ModelAndView mv = new ModelAndView("indexpage");
-        mv.addObject("listcp", cpRepo.findAll());
-        return mv;
     }
 
     @RequestMapping(value = "/deletCP/{id}", method = RequestMethod.GET)
-    public ModelAndView delet(@PathVariable("id") int id) throws ParseException {
-        ModelAndView mv = new ModelAndView("indexpage");
+    @CrossOrigin(origins = "http://localhost:4200")
+    public void delet(@PathVariable("id") int id) throws ParseException {
         Optional<CPtable> cPtable = cpRepo.findById(id);
         cpService.deletById(id);
-
-        CPtable cPtable1 = cPtable.get();
-        mv.addObject("listcu", customerRepo.findByCuid(cPtable1.getCuid()));
-        mv.addObject("listbycu", cpService.findByCuid(cPtable1.getCuid()));
-        return mv;
     }
 
-    @RequestMapping(value = "/editcp/", method = RequestMethod.POST)
-    public ModelAndView edited(@ModelAttribute CPtable cPtable) throws ParseException {
-        ModelAndView mv = new ModelAndView("indexpage");
-        Customer customer = customerRepo.findByCuid(cPtable.getCuid());
-        if (cPtable.getFactore().equals("0"))
-        {
-            customer.setMande(customer.getMande()+Integer.parseInt(cPtable.getPay()));
-        }else {
-            customer.setMande(customer.getMande() - Integer.parseInt(cPtable.getRemain()));
-        }
-        customerRepo.save(customer);
-        mv.addObject("edit", cpRepo.findById(cPtable.getId()).get());
-        mv.addObject("listcu", customerRepo.findByCuid(cPtable.getCuid()));
-        mv.addObject("listbycu", cpService.findByCuid(cPtable.getCuid()));
-        return mv;
-
-    }
 
 
 }

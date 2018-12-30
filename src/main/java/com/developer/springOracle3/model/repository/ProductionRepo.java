@@ -23,5 +23,5 @@ public interface ProductionRepo extends JpaRepository<Production, Integer> {
     Production findByMeterPr(String meterPr);
 
     @Query("SELECT pr.meterPr - nvl((select SUM(cp.metercp)from  CPtable cp where pr.prid=cp.prid ),0) FROM Production pr where pr.prid=?1")
-    Integer remainMeter(String prid);
+    Double remainMeter(String prid);
 }

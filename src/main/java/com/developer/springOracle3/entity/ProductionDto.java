@@ -15,7 +15,7 @@ public class ProductionDto {
 
     private int meterPr;
 
-    private  int remainMeter;
+    private  double remainMeter;
 
     private Date tarikh;
 }

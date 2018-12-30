@@ -33,7 +33,12 @@ public class ProductionController {
     public List<Production> jsonProductio() throws ParseException {
 
         List<Production> productions = prRepo.findAll();
-        return productions;
+        List<Production> productions1 = new ArrayList<>();
+        for (Production production : productions) {
+            production.setRemainMeter(prRepo.remainMeter(production.getPrid()));
+            productions1.add(production);
+        }
+        return productions1;
     }
 
     @RequestMapping("/productionPage1")
@@ -43,7 +48,7 @@ public class ProductionController {
         List<ProductionDto> list = new ArrayList();
         for (Production production : productions) {
             ProductionDto productionDto = ObjectConverter.instance.getCloneObject(production, ProductionDto.class);
-            int a = prRepo.remainMeter(productionDto.getPrid());
+            double a = prRepo.remainMeter(productionDto.getPrid());
             productionDto.setRemainMeter(a);
             productionDto.setTarikh(FDate.gro_to_farsi(productionDto.getTarikh()));
             list.add(productionDto);
@@ -113,11 +118,12 @@ public class ProductionController {
 
     @GetMapping("/findOneProduction/{id}")
     @CrossOrigin(origins = "http://localhost:4200")
-    public Production findOneProduction(@PathVariable("id") String id){
-        Production production=null;
-        production=prRepo.findByPrid(id);
+    public double findOneProduction(@PathVariable("id") String id) {
+        return prRepo.remainMeter(id);
+        /*Production production = null;
+        production = prRepo.findByPrid(id);
         production.setRemainMeter(prRepo.remainMeter(id));
-        return production;
+        return production;*/
     }
 
     @RequestMapping(value = "/resultPr", method = RequestMethod.GET)

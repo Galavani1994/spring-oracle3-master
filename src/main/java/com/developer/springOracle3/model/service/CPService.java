@@ -10,6 +10,7 @@ import com.developer.springOracle3.util.FDate;
 import com.developer.springOracle3.util.ObjectConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@CrossOrigin(origins = "http://localhost:4200")
 public class CPService {
 
     @Autowired
@@ -34,7 +36,7 @@ public class CPService {
 
 
             Customer customer = customerRepo.findByCuid(cPtable.getCuid());
-            if (cPtable.getFactore().equals("0") && cPtable.getPrice().equals("")) {
+            if (cPtable.getFactore().equals("0")) {
                 cPtable.setRemain("0");
                 cPtable.setMetercp("0");
                 cPtable.setDiscount("0");
