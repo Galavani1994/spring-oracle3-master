@@ -16,8 +16,8 @@ public interface CustomerRepo extends JpaRepository<Customer,Integer> {
 
 
 
-    @Query("from Customer where firstName like %?1% or lastName like %?2%")
-    List<Customer> findByFirstNameORLastNameLike(String fristName,String lastName);
+    @Query("from Customer where firstName like %?1% or lastName like %?2% or cuid like %?3%")
+    List<Customer> findByFirstNameORLastNameOrCuid(String firstName,String lastName,String cuid);
 
     @Query("from Customer where cuid=?1 ")
     Customer findByCuid(String cuid);

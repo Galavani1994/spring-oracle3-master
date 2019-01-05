@@ -20,7 +20,6 @@ public class CustomeUserDetailService implements UserDetailsService {
 
         CustomeUserDetails userDetails = null;
         if (userTable != null) {
-
             userDetails= new CustomeUserDetails();
             userDetails.setUserTable(userTable);
         }

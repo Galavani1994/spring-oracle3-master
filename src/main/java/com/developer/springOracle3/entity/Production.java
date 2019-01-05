@@ -22,7 +22,7 @@ public class Production {
     @Column
     private String prName;
     @Column
-    private Integer meterPr;
+    private Double meterPr;
     @Transient
     private Double remainMeter;
     @Column

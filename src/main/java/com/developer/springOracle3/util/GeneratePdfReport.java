@@ -25,10 +25,6 @@ public class GeneratePdfReport {
 
         try {
 
-
-
-
-
             BaseFont bf = BaseFont.createFont("/fonts/nazanin/B Mitra.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
             Font font=new Font(bf,12);
 

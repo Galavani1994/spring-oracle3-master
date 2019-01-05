@@ -6,13 +6,21 @@ import com.developer.springOracle3.entity.Customer;
 import com.developer.springOracle3.model.repository.CPRepo;
 import com.developer.springOracle3.model.repository.CustomerRepo;
 import com.developer.springOracle3.model.service.CustomerService;
+import com.developer.springOracle3.util.CustomerInfoPdf;
+import com.itextpdf.text.DocumentException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @ControllerAdvice
@@ -31,17 +39,8 @@ public class CustomerController {
     @GetMapping("/customerPage")
     @CrossOrigin(origins = "http://localhost:4200")
     public List<Customer> doHOmee() {
-
-        return customerService.findAll();
-
-    }
-
-    @GetMapping("/customerPage1")
-    public List<Customer> doHOmee1() {
-
         return customerService.findAll();
     }
-
 
     @PostMapping("/saveCu")
     @CrossOrigin(origins = "http://localhost:4200")
@@ -54,26 +53,6 @@ public class CustomerController {
             customerService.save(customer);
         }
         return new ModelAndView("redirect:/cu/customerPage");
-    }
-
-
-    @PostMapping("/saveCu1")
-    public ModelAndView saveCu1(@ModelAttribute Customer customer) throws MyException {
-
-        ModelAndView mv = new ModelAndView("redirect:/cu/customerPage");
-        if (customer.getId() != null) {
-            Optional<Customer> optionalCustomer = customerRepo.findById(customer.getId());
-            Customer customer1 = optionalCustomer.get();
-            customer1.setFirstName(customer.getFirstName());
-            customer1.setLastName(customer.getLastName());
-            customer1.setAddressname(customer.getAddressname());
-            customer1.setMande(customer.getMande());
-            customerService.save(customer1);
-        } else {
-            customerService.save(customer);
-        }
-
-        return mv;
     }
 
     @RequestMapping(value = "/deleteCu/{id}", method = RequestMethod.GET)
@@ -96,11 +75,26 @@ public class CustomerController {
     }
 
 
-    @RequestMapping(value = "/resultCu", method = RequestMethod.GET)
-    public ModelAndView showCu(@RequestParam("names") String firstName, @RequestParam("names") String lastName) {
-        ModelAndView mv = new ModelAndView("customer");
-        mv.addObject("lists", customerService.findbylastnaeOrfirstname(firstName, lastName));
-        return mv;
+    @GetMapping("/resultCu/{value}")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public List<Customer> showCu(@PathVariable("value") String value) {
+
+        return customerRepo.findByFirstNameORLastNameOrCuid(value, value, value);
+    }
+
+    @GetMapping(value = "/customerInfoPrint/{id}", produces = MediaType.APPLICATION_PDF_VALUE)
+    @CrossOrigin(origins = "http://localhost:4200")
+    public ResponseEntity<InputStreamResource> customerInfoPrint(@PathVariable("id") int id) throws DocumentException, ParseException, IOException {
+        Customer customer = customerRepo.findById(id).get();
+
+        ByteArrayInputStream bis = CustomerInfoPdf.customerPrint(customer);
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("Content-Disposition", "inline; filename=customerInfo.pdf");
+        return ResponseEntity
+                .ok()
+                .headers(headers)
+                .contentType(MediaType.APPLICATION_PDF)
+                .body(new InputStreamResource(bis));
     }
 
 

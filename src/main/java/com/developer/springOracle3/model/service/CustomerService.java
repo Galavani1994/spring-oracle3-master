@@ -40,8 +40,8 @@ public class CustomerService {
         return customerRepo.findAll();
     }
 
-    public List<Customer> findbylastnaeOrfirstname(String firstname, String lastname) {
-        List<Customer> customers = customerRepo.findByFirstNameORLastNameLike(firstname, lastname);
+    public List<Customer> findbylastnaeOrfirstname(String firstname, String lastname,String cuid) {
+        List<Customer> customers = customerRepo.findByFirstNameORLastNameOrCuid(firstname, lastname,cuid);
         List<Customer> customers1 = new ArrayList<>();
         for (Customer customer : customers) {
             customer.setFirstName("آقای " + customer.getFirstName());

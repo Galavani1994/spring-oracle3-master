@@ -37,29 +37,7 @@ public class CPController {
     private CPService cpService;
 
 
-    /**
-     * @param cuid this one
-     * @return
-     * @throws ParseException
-     */
-    @RequestMapping(value = "/showCustomer", method = RequestMethod.POST)
-    public ModelAndView showCu(@RequestParam("cuid") String cuid) throws ParseException {
-        ModelAndView mv = new ModelAndView("indexpage");
-        mv.addObject("listcu", customerRepo.findByCuid(cuid));
-        mv.addObject("listbycu", cpService.findByCuid(cuid));
-        return mv;
-    }
 
-    @RequestMapping("/showproduction")
-    public ModelAndView showPr(@RequestParam("cuid") String cuid, @RequestParam("prid") String prid) throws ParseException {
-        ModelAndView mv = new ModelAndView("indexpage");
-        mv.addObject("liremain", prRepo.remainMeter(prid));
-        mv.addObject("listcu", customerRepo.findByCuid(cuid));
-        mv.addObject("listpr", prRepo.findByPrid(prid));
-        mv.addObject("listbycu", cpService.findByCuid(cuid));
-
-        return mv;
-    }
     @PostMapping("/editcp")
     @CrossOrigin(origins = "http://localhost:4200")
     public void edited(@RequestBody CPtable cPtable) throws ParseException {

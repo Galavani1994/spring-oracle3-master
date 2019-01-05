@@ -34,7 +34,7 @@ public class Customer {
     private Date registerDate;
     @Column
     private Date lastCome;
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER, cascade =CascadeType.ALL)
     @JoinColumn(name = "customerId")
     private List<Zamen> zamen;
 

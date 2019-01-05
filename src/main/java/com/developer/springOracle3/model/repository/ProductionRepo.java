@@ -13,8 +13,8 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:4200")
 public interface ProductionRepo extends JpaRepository<Production, Integer> {
 
-    @Query("from Production where prName like %?1% ")
-    List<Production> findByFirstNameORLastNameLike(String prName);
+    @Query("from Production where prName like %?1% or prid like %?2%")
+    List<Production> findByPrNameOrPrid(String prName,String prid);
 
     @Query("from Production where prid=?1")
     Production findByPrid(String prid);

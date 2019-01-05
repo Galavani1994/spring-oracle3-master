@@ -2,79 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="965c34b3-1474-4a7c-8cb6-b7f5256a95ec" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_kavenegar_kavenegar_java_v2_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/CustomerInfoPdf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibm_icu_icu4j_57_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_lowagie_itext_2_1_7_js5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_regexp_jakarta_regexp_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jasperreports_jasperreports_6_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_castor_castor_core_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_castor_castor_xml_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_core_compiler_ecj_4_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jcommon_1_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jfreechart_1_0_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_olap4j_olap4j_0_9_7_309_JS_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/config/ConfigSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/config/ConfigSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springOracle3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springOracle3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CPController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CPController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ProductionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ProductionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Production.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Production.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/ProductionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/ProductionDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CPRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CPRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CustomerRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/ProductionRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/ProductionRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CPService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CPService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/404.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/customer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/production.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/report.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/MyException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/SpringOracleApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/annotation/ControllerViewName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/config/SwaggerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CPController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CustomerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/ExceptionAdvice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/ProductionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/ReportController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/entity/CPtable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/entity/CPtableDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/entity/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/entity/Production.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/CPRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/CustomerRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/ProductionRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/service/CPService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/service/CustomerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/service/ProductionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/util/ExceptionMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/util/FDate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/util/ObjectConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/bootstrap-rtl-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/bootstrap-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/jquery/jquery-3.3.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/jquery/jquery-ui-min/jquery-ui-datetimepicker.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/jquery/jquery-ui-min/jquery-ui-min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/jquery/jquery-ui/AUTHORS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/jquery/jquery-ui/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/jquery/jquery-ui/jquery-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/jquery/jquery-ui/jquery-ui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/jquery/jquery-ui/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/js-persian-cal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/js-persian-cal.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/js/NumberFormat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/js/bootstrap-rtl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/js/bootstrap-rtl.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/js/persian-date-convert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/pcal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/userService/CustomeUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/userService/CustomeUserDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/GeneratePdfReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/GeneratePdfReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CPController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CPController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/ProductionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/ProductionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/ReportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/ReportController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/entity/Production.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/entity/Production.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/CustomerRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/CustomerRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/ProductionRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/ProductionRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/service/CustomerService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/src/main/resources/static/css/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -114,38 +87,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CPController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CPController.java">
+      <file leaf-file-name="ReportController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="211">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductionController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ProductionController.java">
+      <file leaf-file-name="CustomerInfoPdf.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/CustomerInfoPdf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="121" column="38" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductionDto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/ProductionDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Production.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Production.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="110">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,47 +108,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductionRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/ProductionRepo.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="209">
+              <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexpage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/indexpage.jsp">
+      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="189" column="31" selection-start-line="189" selection-start-column="31" selection-end-line="189" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CPService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CPService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-163">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CPtable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/CPtable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="30" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CPRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CPRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            <state relative-caret-position="260">
+              <caret line="96" column="52" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -245,14 +173,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/userRepository/userRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/userController/RoleController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/users/UserTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/userController/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/log.css" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/log.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/userRepository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/userService/CustomeUserDetailService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/404.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/userService/CustomeUserDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/SecurityuploadfileApplication.java" />
@@ -261,7 +187,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/TestForPdf.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/TestforPdf2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/GeneratePdfReport.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/indexPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/indexs.jsp" />
@@ -269,33 +194,36 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/loginForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/Captcha.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/userController/CaptchaController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/SpringOracleApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/config/FaviconConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/indexpage.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/CPtable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CustomerRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/ProductionService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/production.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/CPtableDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/Lambda.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Zamen.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Customer.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CPRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CPService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/config/ConfigSecurity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CPController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Production.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/ProductionDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CPController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/userService/CustomeUserDetailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/ProductionRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Production.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CustomerRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CustomerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/GeneratePdfReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ProductionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/CustomerInfoPdf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -330,6 +258,11 @@
           <item name="springOracle3" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springOracle3" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -354,7 +287,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -379,77 +311,6 @@
               <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-oracle3-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springOracle3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-oracle3-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springOracle3" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-oracle3-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springOracle3" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-oracle3-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springOracle3" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-oracle3-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springOracle3" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-oracle3-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springOracle3" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-oracle3-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springOracle3" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-oracle3-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -467,19 +328,11 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spring-oracle3-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -492,7 +345,7 @@
     <property name="SearchEverywhereHistoryKey" value="String&#9;PSI&#9;JAVA://java.lang.String&#10;customer&#9;PSI&#9;JAVA://com.developer.springOracle3.model.repository.CustomerRepo&#10;httperr&#9;PSI&#9;JAVA://sun.net.httpserver.HttpError" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/ansarit-site-service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ansarit-site-service" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -500,21 +353,21 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\m.galavani\Desktop\spring-oracle3-master\src\main\resources\static" />
-      <recent name="C:\Users\m.galavani\Desktop\spring-oracle3-master\src\main\resources\images" />
       <recent name="C:\Users\m.galavani\Desktop\spring-oracle3-master\src\main\resources\fonts\nazanin" />
-      <recent name="C:\Users\m.galavani\Desktop\spring-oracle3-master\src\main\resources\fonts\noto" />
-      <recent name="C:\Users\m.galavani\Desktop\spring-oracle3-master\src\main\resources\static\css\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.developer.springOracle3.util" />
       <recent name="com.developer.springOracle3.config" />
       <recent name="com.developer.springOracle3.entity" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\m.galavani\Desktop\spring-oracle3-master\src\main\resources\static" />
+      <recent name="C:\Users\m.galavani\Desktop\spring-oracle3-master\src\main\resources\images" />
       <recent name="C:\Users\m.galavani\Desktop\spring-oracle3-master\src\main\resources\fonts\nazanin" />
+      <recent name="C:\Users\m.galavani\Desktop\spring-oracle3-master\src\main\resources\fonts\noto" />
+      <recent name="C:\Users\m.galavani\Desktop\spring-oracle3-master\src\main\resources\static\css\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -743,7 +596,11 @@
       <workItem from="1545713536963" duration="3390000" />
       <workItem from="1545800422663" duration="7346000" />
       <workItem from="1546058100625" duration="14872000" />
-      <workItem from="1546144693929" duration="13175000" />
+      <workItem from="1546144693929" duration="13915000" />
+      <workItem from="1546230728173" duration="3763000" />
+      <workItem from="1546318363991" duration="842000" />
+      <workItem from="1546424843567" duration="5238000" />
+      <workItem from="1546663615561" duration="15002000" />
     </task>
     <task id="LOCAL-00001" summary="in this sample select one customer and production are correct.">
       <created>1533711534672</created>
@@ -815,18 +672,25 @@
       <option name="project" value="LOCAL" />
       <updated>1545657234554</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="این هماهنگ با فرانتد کار م یکند ولی در نمایش مقدار موجودی کالا به صورت اعشاری مشکل دارد">
+      <created>1546174776038</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1546174776039</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="671044000" />
+    <option name="totallyTimeSpent" value="696629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5022659" side_tool="true" weight="0.38423645" />
-      <window_info anchor="right" id="Maven Projects" order="4" weight="0.16767372" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.3028701" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="4" />
@@ -843,10 +707,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="8" weight="0.32840723" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4969743" weight="0.32840723" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32840723" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32840723" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.32840723" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29758307" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31570998" />
       <window_info anchor="bottom" id="Problems" order="15" />
       <window_info anchor="right" id="Bean Validation" order="7" />
       <window_info id="Web" order="3" side_tool="true" />
@@ -886,11 +750,12 @@
     <MESSAGE value="به جهت ذخیره و ویرایش مدیریت مشتری تغییراتی انجام گرفته است" />
     <MESSAGE value="برای ذخیره کر دن مدیریت مشتری کنترلر تمیز کاری شده است" />
     <MESSAGE value="برای پیدا کردن مشتری و کالا متدهایی اضافه شده است" />
-    <option name="LAST_COMMIT_MESSAGE" value="برای پیدا کردن مشتری و کالا متدهایی اضافه شده است" />
+    <MESSAGE value="این هماهنگ با فرانتد کار م یکند ولی در نمایش مقدار موجودی کالا به صورت اعشاری مشکل دارد" />
+    <option name="LAST_COMMIT_MESSAGE" value="این هماهنگ با فرانتد کار م یکند ولی در نمایش مقدار موجودی کالا به صورت اعشاری مشکل دارد" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="191" />
+      <option name="time" value="196" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
@@ -953,13 +818,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/itextpdf/5.5.6/itextpdf-5.5.6-sources.jar!/com/itextpdf/text/pdf/PdfPTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27184">
-          <caret line="1747" column="16" selection-start-line="1747" selection-start-column="16" selection-end-line="1747" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/itextpdf/5.5.6/itextpdf-5.5.6-sources.jar!/com/itextpdf/text/pdf/ColumnText.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -968,13 +826,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/TestForPdf.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ExceptionAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/userController/CaptchaController.java" />
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.0.3.RELEASE/spring-boot-dependencies-2.0.3.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor">
@@ -1005,13 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/userService/CustomeUserDetailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/js-persian-cal.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1037,13 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
           <caret line="61" column="1" selection-start-line="54" selection-end-line="61" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/userService/CustomeUserDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1089,13 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/GeneratePdfReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -1103,38 +933,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Zamen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="98" column="37" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1149,20 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding>
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1201,23 +989,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CustomerRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CPRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="374">
           <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
         </state>
       </provider>
@@ -1231,21 +1005,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CPService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
+        <state relative-caret-position="391">
           <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="47" column="43" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/indexpage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="3213">
           <caret line="189" column="31" selection-start-line="189" selection-start-column="31" selection-end-line="189" selection-end-column="31" />
         </state>
       </provider>
@@ -1259,46 +1026,143 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/CPtable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="289">
           <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="30" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CPController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/ProductionDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
+        <state relative-caret-position="255">
           <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/ProductionRepo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ExceptionAdvice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        <state relative-caret-position="396">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/userService/CustomeUserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/userService/CustomeUserDetailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Production.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        <state relative-caret-position="315">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="36" column="64" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CustomerRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/ProductionRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="43" column="104" selection-start-line="43" selection-start-column="104" selection-end-line="43" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CPController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ProductionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="121" column="38" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
+        <state relative-caret-position="243">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/GeneratePdfReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="116" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/CustomerInfoPdf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="96" column="52" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
         </state>
       </provider>
     </entry>
