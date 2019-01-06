@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.alfresco.local:alfresco-benchmark-webdrone:1.6.bel">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/alfresco/local/alfresco-benchmark-webdrone/1.6.bel/alfresco-benchmark-webdrone-1.6.bel.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/alfresco/local/alfresco-benchmark-webdrone/1.6.bel/alfresco-benchmark-webdrone-1.6.bel-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/alfresco/local/alfresco-benchmark-webdrone/1.6.bel/alfresco-benchmark-webdrone-1.6.bel-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -29,11 +29,7 @@
     </repositories>
 
     <dependencies>
-        <dependency>
-            <groupId>com.github.kavenegar</groupId>
-            <artifactId>kavenegar-java</artifactId>
-            <version>v2</version>
-        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf -->
 
         <dependency>
@@ -167,8 +163,11 @@
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
-
-
+        <dependency>
+            <groupId>org.alfresco.local</groupId>
+            <artifactId>alfresco-benchmark-webdrone</artifactId>
+            <version>1.6.bel</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -2,52 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="965c34b3-1474-4a7c-8cb6-b7f5256a95ec" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_kavenegar_kavenegar_java_v2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/CustomerInfoPdf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_3_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibm_icu_icu4j_57_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_lowagie_itext_2_1_7_js5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_regexp_jakarta_regexp_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jasperreports_jasperreports_6_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_4_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_4_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_4_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_4_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_4_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_castor_castor_core_1_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_castor_castor_xml_1_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_core_compiler_ecj_4_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jcommon_1_0_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jfreechart_1_0_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_olap4j_olap4j_0_9_7_309_JS_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_lambdaj_lambdaj_2_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_alfresco_local_alfresco_benchmark_webdrone_1_6_bel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_beanshell_bsh_2_0b4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_all_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_8_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ru_yandex_qatools_htmlelements_htmlelements_java_1_11.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springOracle3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springOracle3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CPController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CPController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ProductionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ProductionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Production.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/entity/Production.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/CustomerRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/ProductionRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/repository/ProductionRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/userService/CustomeUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/userService/CustomeUserDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/GeneratePdfReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/GeneratePdfReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CPController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CPController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/ProductionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/ProductionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/ReportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/ReportController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/entity/Production.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/entity/Production.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/CustomerRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/CustomerRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/ProductionRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/repository/ProductionRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/model/service/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/CustomerInfoPdf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/CustomerInfoPdf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/TestforPdf2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/TestforPdf2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/developer/springOracle3/controller/CustomerController.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/src/main/resources/static/css/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -87,20 +77,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReportController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CustomerInfoPdf.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/CustomerInfoPdf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="107">
+              <caret line="182" column="28" selection-start-line="182" selection-start-column="28" selection-end-line="182" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,20 +89,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="212">
+              <caret line="91" column="54" selection-start-line="91" selection-start-column="54" selection-end-line="91" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java">
+      <file leaf-file-name="TestforPdf2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/TestforPdf2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="96" column="52" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
+            <state relative-caret-position="136">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -159,6 +143,7 @@
       <find>index</find>
       <find>frm1</find>
       <find>swa</find>
+      <find>pdfw</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,13 +171,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/report2.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/TestForPdf.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/TestforPdf2.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/indexPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/indexs.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/loginForm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/Captcha.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/userController/CaptchaController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/SpringOracleApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/config/FaviconConfiguration.java" />
@@ -220,10 +203,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/model/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/GeneratePdfReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ProductionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/Captcha.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/TestforPdf2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/CustomerInfoPdf.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -288,6 +273,7 @@
     <panes>
       <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -305,6 +291,39 @@
               <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-oracle3-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-oracle3-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springOracle3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-oracle3-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springOracle3" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-oracle3-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-oracle3-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springOracle3" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-oracle3-master" type="b2602c69:ProjectViewProjectNode" />
@@ -332,7 +351,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,12 +363,12 @@
     <property name="SearchEverywhereHistoryKey" value="String&#9;PSI&#9;JAVA://java.lang.String&#10;customer&#9;PSI&#9;JAVA://com.developer.springOracle3.model.repository.CustomerRepo&#10;httperr&#9;PSI&#9;JAVA://sun.net.httpserver.HttpError" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ansarit-site-service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -496,8 +514,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lambda" />
         <item itemvalue="Application.TestforPdf2" />
+        <item itemvalue="Application.Lambda" />
         <item itemvalue="Application.TestForPdf" />
         <item itemvalue="Application.CPController" />
         <item itemvalue="Application.CustomerDto" />
@@ -600,7 +618,8 @@
       <workItem from="1546230728173" duration="3763000" />
       <workItem from="1546318363991" duration="842000" />
       <workItem from="1546424843567" duration="5238000" />
-      <workItem from="1546663615561" duration="15002000" />
+      <workItem from="1546663615561" duration="15628000" />
+      <workItem from="1546752894887" duration="19251000" />
     </task>
     <task id="LOCAL-00001" summary="in this sample select one customer and production are correct.">
       <created>1533711534672</created>
@@ -679,18 +698,26 @@
       <option name="project" value="LOCAL" />
       <updated>1546174776039</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="جستجوی مشتری و کالا به هربخش و مدیریت فروش اضافه شده است.کتابخانه سیستم پیامکی هم اضافه شده است ولی درست اضافه نشد به کتابخانه">
+      <created>1546694058127</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1546694058127</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="696629000" />
+    <option name="totallyTimeSpent" value="716506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5022659" side_tool="true" weight="0.38423645" />
-      <window_info anchor="right" id="Maven Projects" order="4" weight="0.3028701" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.1918429" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="4" />
@@ -699,7 +726,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info id="UI Designer" order="5" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49773413" weight="0.38423645" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.49773413" visible="true" weight="0.38423645" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32840723" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
@@ -707,10 +734,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="8" weight="0.32840723" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4969743" weight="0.32840723" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32840723" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32840723" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.32840723" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31570998" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3202417" />
       <window_info anchor="bottom" id="Problems" order="15" />
       <window_info anchor="right" id="Bean Validation" order="7" />
       <window_info id="Web" order="3" side_tool="true" />
@@ -751,16 +778,20 @@
     <MESSAGE value="برای ذخیره کر دن مدیریت مشتری کنترلر تمیز کاری شده است" />
     <MESSAGE value="برای پیدا کردن مشتری و کالا متدهایی اضافه شده است" />
     <MESSAGE value="این هماهنگ با فرانتد کار م یکند ولی در نمایش مقدار موجودی کالا به صورت اعشاری مشکل دارد" />
-    <option name="LAST_COMMIT_MESSAGE" value="این هماهنگ با فرانتد کار م یکند ولی در نمایش مقدار موجودی کالا به صورت اعشاری مشکل دارد" />
+    <MESSAGE value="جستجوی مشتری و کالا به هربخش و مدیریت فروش اضافه شده است.کتابخانه سیستم پیامکی هم اضافه شده است ولی درست اضافه نشد به کتابخانه" />
+    <option name="LAST_COMMIT_MESSAGE" value="جستجوی مشتری و کالا به هربخش و مدیریت فروش اضافه شده است.کتابخانه سیستم پیامکی هم اضافه شده است ولی درست اضافه نشد به کتابخانه" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="196" />
+      <option name="time" value="205" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="list.indexOf(i);" />
         <watch expression="mv.model" />
+        <watch expression="bis" />
+        <watch expression="((java.util.LinkedList)((LinkedHashMap.Entry)headers.entrySet().toArray()[0]).getValue()).get(0)" custom="java.util.LinkedHashMap.Entry,java.util.LinkedList" />
+        <watch expression="headers" />
       </configuration>
     </watches-manager>
   </component>
@@ -770,6 +801,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>customer</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>cPtable</expression-string>
         <language-id>JAVA</language-id>
@@ -810,22 +846,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>customerRepo.findByFirstNameORLastNameLike(firstname,lastname)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/itextpdf/5.5.6/itextpdf-5.5.6-sources.jar!/com/itextpdf/text/pdf/ColumnText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="732" column="39" lean-forward="true" selection-start-line="732" selection-start-column="18" selection-end-line="732" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/TestForPdf.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/userController/CaptchaController.java" />
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.0.3.RELEASE/spring-boot-dependencies-2.0.3.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor">
@@ -898,38 +921,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/Captcha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customer.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
           <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/Lambda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/TestforPdf2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -993,13 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="215" selection-start-line="215" selection-end-line="215" />
         </state>
       </provider>
     </entry>
@@ -1128,17 +1116,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/Captcha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="164" column="21" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/Lambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-700">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="208" selection-start-line="208" selection-end-line="208" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/http/MediaType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="138" column="69" selection-start-line="138" selection-start-column="56" selection-end-line="138" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/GeneratePdfReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="116" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="116" />
+        <state relative-caret-position="-3145">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/TestforPdf2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="57" column="75" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/util/CustomerInfoPdf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="107">
+          <caret line="182" column="28" selection-start-line="182" selection-start-column="28" selection-end-line="182" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1147,22 +1198,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="96" column="52" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/developer/springOracle3/controller/ReportController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="212">
+          <caret line="91" column="54" selection-start-line="91" selection-start-column="54" selection-end-line="91" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

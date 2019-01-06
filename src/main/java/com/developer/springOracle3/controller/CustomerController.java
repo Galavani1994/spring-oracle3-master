@@ -16,8 +16,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
@@ -82,14 +81,16 @@ public class CustomerController {
         return customerRepo.findByFirstNameORLastNameOrCuid(value, value, value);
     }
 
-    @GetMapping(value = "/customerInfoPrint/{id}", produces = MediaType.APPLICATION_PDF_VALUE)
+    @GetMapping(value = "/customerInfoPrint/{id}",produces = MediaType.APPLICATION_PDF_VALUE)
     @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<InputStreamResource> customerInfoPrint(@PathVariable("id") int id) throws DocumentException, ParseException, IOException {
-        Customer customer = customerRepo.findById(id).get();
 
-        ByteArrayInputStream bis = CustomerInfoPdf.customerPrint(customer);
+        Customer customer=customerRepo.findById(id).get();
+        ByteArrayInputStream bis=CustomerInfoPdf.customerPrint(customer);
+
         HttpHeaders headers = new HttpHeaders();
-        headers.add("Content-Disposition", "inline; filename=customerInfo.pdf");
+        headers.add("Content-Disposition", "attachment; filename=customerInfo.pdf");
+
         return ResponseEntity
                 .ok()
                 .headers(headers)

@@ -30,6 +30,7 @@ public class TestforPdf2 {
 
         cell=new PdfPCell(pHoly);
         cell.setRunDirection(PdfWriter.RUN_DIRECTION_RTL);
+        cell.setPaddingBottom(10);
         cell.setBorder(Rectangle.NO_BORDER);
         cell.setHorizontalAlignment(Element.ALIGN_CENTER);
         tHeader.addCell(cell);
@@ -56,7 +57,7 @@ public class TestforPdf2 {
         Date date=new Date();
         Date date1=FDate.gro_to_farsi(date);
         String dates=FDate.formatter_to_string(date1);
-        tcell=new PdfPCell(new Phrase(dates));
+        tcell=new PdfPCell(new Phrase(dates,font));
         tcell.setBorder(Rectangle.NO_BORDER);
         tTitle.addCell(tcell);
 
@@ -73,32 +74,41 @@ public class TestforPdf2 {
         cell1 = new PdfPCell(new Phrase("کدمشتری", font));
         cell1.setRunDirection(PdfWriter.RUN_DIRECTION_RTL);
         cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
+        cell1.setPaddingBottom(5);
         table1.addCell(cell1);
 
         cell1 = new PdfPCell(new Phrase("نام", font));
         cell1.setRunDirection(PdfWriter.RUN_DIRECTION_RTL);
         cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
+        cell1.setPaddingBottom(5);
         table1.addCell(cell1);
 
         cell1 = new PdfPCell(new Phrase("نام خانوادگی", font));
         cell1.setRunDirection(PdfWriter.RUN_DIRECTION_RTL);
         cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
+        cell1.setPaddingBottom(5);
         table1.addCell(cell1);
 
         for (int i = 1; i <5 ; i++) {
             cell1 = new PdfPCell(new Phrase(String.valueOf(i),font));
             cell1.setRunDirection(PdfWriter.RUN_DIRECTION_RTL);
             cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
+            cell1.setPaddingBottom(5);
+            cell1.setBorder(Rectangle.NO_BORDER);
             table1.addCell(cell1);
 
             cell1 = new PdfPCell(new Phrase("مهدی"+String.valueOf(i), font));
             cell1.setRunDirection(PdfWriter.RUN_DIRECTION_RTL);
             cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
+            cell1.setPaddingBottom(5);
+            cell1.setBorder(Rectangle.NO_BORDER);
             table1.addCell(cell1);
 
             cell1 = new PdfPCell(new Phrase("گلوانی", font));
             cell1.setRunDirection(PdfWriter.RUN_DIRECTION_RTL);
             cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
+            cell1.setPaddingBottom(5);
+            cell1.setBorder(Rectangle.NO_BORDER);
             table1.addCell(cell1);
         }
 
