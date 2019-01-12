@@ -19,13 +19,11 @@ public final class ObjectConverter {
 
     public <O> O getCloneObject(Object input, final Class<O> clazz) {
         final String json = gson.toJson(input);
-
         return gson.fromJson(json, clazz);
     }
 
     public <O> List<O> getCloneObjectList(Object input, final Class clazz) {
         final String json = gson.toJson(input);
-
         final Type typeTok = TypeToken.getParameterized(List.class, clazz).getType();
         return gson.fromJson(json, typeTok);
     }

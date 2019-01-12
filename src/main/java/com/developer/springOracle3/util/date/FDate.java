@@ -1,8 +1,4 @@
-package com.developer.springOracle3.util;
-
-import jdk.internal.dynalink.beans.StaticClass;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import sun.java2d.pipe.SpanShapeRenderer;
+package com.developer.springOracle3.util.date;
 
 import java.math.BigDecimal;
 import java.text.ParseException;
@@ -21,6 +17,9 @@ public final class FDate {
     private static int f_year;
     private static int f_day;
     private static int f_month;
+
+    private FDate() {
+    }
 
     private static float persian_to_jd(
             int year, int month, int day) {
@@ -114,7 +113,8 @@ public final class FDate {
         return year + "/" + month + "/" + day;
     }
 
-    public static Date Farsi_to_georgian(int year, int month, int day) {
+    public static Date Farsi_to_georgian(
+            int year, int month, int day) {
         float a = persian_to_jd(year, month, day);
         jd_to_gregorian(a);
         Calendar c1 = new GregorianCalendar(e_year, e_month - 1, e_day);
@@ -125,48 +125,37 @@ public final class FDate {
         return Farsi_to_georgian(f_year, f_month, f_day);
     }
 
-    public static String gregorian_to_Farsi(int year, int month, int day) {
-
-
+    public static String gregorian_to_Farsi(
+            int year, int month, int day) {
         return jd_to_persian(gregorian_to_jd(year, month, day));
     }
 
     public static String Farsi_from_Georgian(final Date date) {
-
+        if (date == null) return null;
         Calendar c = Calendar.getInstance();
         c.setTime(date);
 
         return jd_to_persian(gregorian_to_jd(c.get(1), c.get(2) + 1, c.get(5)));
     }
-    public static Date formatter_to_date(String str) throws ParseException {
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy/MM/dd");
-        Date date=sdf.parse(str);
-        return date;
+
+    ////////////////////////////////added new to this class///////////////
+    public static Date Farsi_to_Gregorian(Date date){
+        Calendar calendar=new GregorianCalendar();
+        calendar.setTime(date);
+        return FDate.Farsi_to_georgian(calendar.get(1),calendar.get(2)+1,calendar.get(5));
     }
-    public static String formatter_to_string(Date date)
-    {
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy/MM/dd");
-        return sdf.format(date);
-    }
-    public static Date farsi_to_grogerian(Date date)
-    {
-        Calendar c=Calendar.getInstance();
-        c.setTime(date);
-        return FDate.Farsi_to_georgian(c.get(Calendar.YEAR),c.get(Calendar.MONTH)+1,c.get(Calendar.DAY_OF_MONTH));
+    public static String Gregorian_to_Farsi(Date date) throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat();
+        Calendar calendar = new GregorianCalendar();
+        calendar.setTime(date);
+        return FDate.Farsi_from_Georgian(calendar.getTime());
 
     }
-    public static Date gro_to_farsi(Date date) throws ParseException {
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy/MM/dd");
-        String s = FDate.Farsi_from_Georgian(date);
-        Date date1=sdf.parse(s);
-        return date1;
-    }
-
 
 }
 
 
-/* Location:           
+/* Location:
  * Qualified Name:     util.FDate
  * JD-Core Version:    0.7.0.1
  */

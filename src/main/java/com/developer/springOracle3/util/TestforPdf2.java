@@ -55,10 +55,10 @@ public class TestforPdf2 {
         tTitle.addCell(tcell);
 
         Date date=new Date();
-        Date date1=FDate.gro_to_farsi(date);
-        String dates=FDate.formatter_to_string(date1);
-        tcell=new PdfPCell(new Phrase(dates,font));
-        tcell.setBorder(Rectangle.NO_BORDER);
+//        Date date1=FDate.gro_to_farsi(date);
+//        String dates=FDate.formatter_to_string(date1);
+//        tcell=new PdfPCell(new Phrase(dates,font));
+//        tcell.setBorder(Rectangle.NO_BORDER);
         tTitle.addCell(tcell);
 
 

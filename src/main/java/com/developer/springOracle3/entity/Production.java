@@ -27,6 +27,8 @@ public class Production {
     private Double remainMeter;
     @Column
     private Date tarikh;
+    @Column
+    private String descreption;
 
 
 }

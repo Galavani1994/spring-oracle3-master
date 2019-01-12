@@ -2,13 +2,15 @@ package com.developer.springOracle3.util;
 
 import com.developer.springOracle3.entity.CPtableDto;
 import com.itextpdf.text.*;
-import com.itextpdf.text.pdf.*;
+import com.itextpdf.text.pdf.BaseFont;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.text.pdf.draw.VerticalPositionMark;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.text.ParseException;
 import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
@@ -61,9 +63,9 @@ public class GeneratePdfReport {
             tTitle.addCell(tcell);
 
             Date date=new Date();
-            Date date1=FDate.gro_to_farsi(date);
-            String dates=FDate.formatter_to_string(date1);
-            tcell=new PdfPCell(new Phrase(dates));
+//            Date date1=FDate.gro_to_farsi(date);
+//            String dates=FDate.formatter_to_string(date1);
+//            tcell=new PdfPCell(new Phrase(dates));
             tcell.setBorder(Rectangle.NO_BORDER);
             tTitle.addCell(tcell);
 
@@ -181,9 +183,9 @@ public class GeneratePdfReport {
                 cell1.setPaddingRight(5);
                 table.addCell(cell1);
 
-                String date11=FDate.formatter_to_string(cPtableDto.getKaladate());
+             //   String date11=FDate.formatter_to_string(cPtableDto.getKaladate());
 
-                cell1 = new PdfPCell(new Phrase(date11));
+               // cell1 = new PdfPCell(new Phrase(date11));
                 cell1.setVerticalAlignment(Element.ALIGN_MIDDLE);
                 cell1.setHorizontalAlignment(Element.ALIGN_CENTER);
                 cell1.setPaddingRight(5);
@@ -215,8 +217,6 @@ public class GeneratePdfReport {
 
             Logger.getLogger(GeneratePdfReport.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
             e.printStackTrace();
         }
 

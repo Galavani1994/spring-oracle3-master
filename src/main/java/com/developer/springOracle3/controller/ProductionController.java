@@ -3,15 +3,14 @@ package com.developer.springOracle3.controller;
 import com.developer.springOracle3.MyException;
 import com.developer.springOracle3.annotation.ControllerViewName;
 import com.developer.springOracle3.entity.Production;
+import com.developer.springOracle3.entity.ProductionDto;
 import com.developer.springOracle3.model.repository.ProductionRepo;
 import com.developer.springOracle3.model.service.ProductionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.io.IOException;
 import java.text.ParseException;
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -27,29 +26,15 @@ public class ProductionController {
 
     @RequestMapping("/productionPage")
     @CrossOrigin(origins = "http://localhost:4200")
-    public List<Production> jsonProduction() throws ParseException {
+    public List<ProductionDto> jsonProduction() throws ParseException {
 
-        List<Production> productions = prRepo.findAll();
-        List<Production> productions1 = new ArrayList<>();
-        for (Production production : productions) {
-            production.setRemainMeter(prRepo.remainMeter(production.getPrid()));
-            productions1.add(production);
-        }
-        return productions1;
+        return prService.findAll();
     }
 
     @RequestMapping("/savePr")
     @CrossOrigin(origins = "http://localhost:4200")
-    public void savePr(@RequestBody Production production) throws MyException, ParseException, IOException {
-
-        if (production.getId() == null) {
-            prRepo.save(production);
-        } else {
-            /*byte[] fileByte = file.getBytes();
-            Path path = Paths.get(uploadFile + production.getPrName() + ".jpg");
-            Files.write(path, fileByte);*/
-            prService.save(production);
-        }
+    public void savePr(@RequestBody Production production) throws MyException {
+        prService.save(production);
     }
 
 
@@ -73,14 +58,14 @@ public class ProductionController {
         production.setRemainMeter(prRepo.remainMeter(id));
         return production;
     }
-
+/*
+این بخش برای جستجوی کالا با نام یا کد کالا صورت می گیرد
+*/
     @GetMapping("/resultPr/{value}")
     @CrossOrigin(origins = "http://localhost:4200")
-    public List<Production> showProduction(@PathVariable("value") String value) {
-        return prRepo.findByPrNameOrPrid(value, value);
+    public List<ProductionDto> showProduction(@PathVariable("value") String value) throws ParseException {
+        return prService.showProduction(value);
     }
-
-
 
 
 }

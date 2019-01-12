@@ -1,6 +1,7 @@
 package com.developer.springOracle3.util;
 
 import com.developer.springOracle3.entity.Customer;
+import com.developer.springOracle3.util.date.FDate;
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfPCell;
@@ -62,8 +63,7 @@ public class CustomerInfoPdf {
             tTitle.addCell(tcell);
 
             Date date = new Date();
-            Date date1 = FDate.gro_to_farsi(date);
-            String dates = FDate.formatter_to_string(date1);
+            String dates = FDate.Gregorian_to_Farsi(date);
             tcell = new PdfPCell(new Phrase(dates, font));
             tcell.setBorder(Rectangle.NO_BORDER);
             tTitle.addCell(tcell);
@@ -147,7 +147,7 @@ public class CustomerInfoPdf {
             CoTable.addCell(contentCell);
 
             Date date2 = customer.getRegisterDate();
-            String stringDate = FDate.formatter_to_string(date2);
+            String stringDate = FDate.Gregorian_to_Farsi(date2);
             contentCell = new PdfPCell(new Phrase(stringDate, font));
             contentCell.setRunDirection(PdfWriter.RUN_DIRECTION_RTL);
             contentCell.setHorizontalAlignment(Element.ALIGN_CENTER);
@@ -172,7 +172,8 @@ public class CustomerInfoPdf {
             contentCell.setPaddingBottom(5);
             CoTable.addCell(contentCell);
 
-            contentCell = new PdfPCell(new Phrase("مشخص نیست", font));
+            Date date1=customer.getLastCome();
+            contentCell = new PdfPCell(new Phrase(FDate.Gregorian_to_Farsi(date1), font));
             contentCell.setRunDirection(PdfWriter.RUN_DIRECTION_RTL);
             contentCell.setHorizontalAlignment(Element.ALIGN_CENTER);
             contentCell.setPaddingBottom(5);

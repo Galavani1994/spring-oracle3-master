@@ -3,8 +3,10 @@ package com.developer.springOracle3.controller;
 import com.developer.springOracle3.MyException;
 import com.developer.springOracle3.annotation.ControllerViewName;
 import com.developer.springOracle3.entity.Customer;
+import com.developer.springOracle3.entity.CustomerDto;
 import com.developer.springOracle3.model.repository.CPRepo;
 import com.developer.springOracle3.model.repository.CustomerRepo;
+import com.developer.springOracle3.model.service.CPService;
 import com.developer.springOracle3.model.service.CustomerService;
 import com.developer.springOracle3.util.CustomerInfoPdf;
 import com.itextpdf.text.DocumentException;
@@ -14,9 +16,9 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,25 +35,24 @@ public class CustomerController {
     private CustomerRepo customerRepo;
     @Autowired
     private CPRepo cpRepo;
+    @Autowired
+    private CPService cpService;
 
 
     @GetMapping("/customerPage")
     @CrossOrigin(origins = "http://localhost:4200")
-    public List<Customer> doHOmee() {
+    public List<CustomerDto> doHOmee() throws ParseException {
         return customerService.findAll();
     }
 
     @PostMapping("/saveCu")
     @CrossOrigin(origins = "http://localhost:4200")
-    public ModelAndView saveCu(@RequestBody Customer customer) throws MyException {
-
-        if (customer.getId() == null) {
-            customer.setMande(0l);
+    public void saveCu(@RequestBody Customer customer) {
+        try {
             customerService.save(customer);
-        } else {
-            customerService.save(customer);
+        } catch (MyException e) {
+            e.printStackTrace();
         }
-        return new ModelAndView("redirect:/cu/customerPage");
     }
 
     @RequestMapping(value = "/deleteCu/{id}", method = RequestMethod.GET)
@@ -66,19 +67,19 @@ public class CustomerController {
 
     @GetMapping("/findOneCustomer/{id}")
     @CrossOrigin(origins = "http://localhost:4200")
-    public List<Object> findOneCustomer(@PathVariable("id") String id) {
+    public List<Object> findOneCustomer(@PathVariable("id") String id) throws ParseException {
         List<Object> objects = new ArrayList<>();
         objects.add(customerRepo.findByCuid(id));
-        objects.add(cpRepo.findByCuid(id));
+        objects.add(cpService.findByCuid(id));
         return objects;
     }
 
 
     @GetMapping("/resultCu/{value}")
     @CrossOrigin(origins = "http://localhost:4200")
-    public List<Customer> showCu(@PathVariable("value") String value) {
+    public List<CustomerDto> searchCustomer(@PathVariable("value") String value) throws ParseException {
 
-        return customerRepo.findByFirstNameORLastNameOrCuid(value, value, value);
+        return customerService.searchCustomer(value);
     }
 
     @GetMapping(value = "/customerInfoPrint/{id}",produces = MediaType.APPLICATION_PDF_VALUE)
@@ -89,7 +90,7 @@ public class CustomerController {
         ByteArrayInputStream bis=CustomerInfoPdf.customerPrint(customer);
 
         HttpHeaders headers = new HttpHeaders();
-        headers.add("Content-Disposition", "attachment; filename=customerInfo.pdf");
+        headers.add("Content-Disposition", "inline; filename=customerInfo.pdf");
 
         return ResponseEntity
                 .ok()
