@@ -65,9 +65,9 @@ public class CustomerController {
         cpRepo.deleteByCuid(cuid);
     }
 
-    @GetMapping("/findOneCustomer/{id}")
+    @PostMapping("/findOneCustomer")
     @CrossOrigin(origins = "http://localhost:4200")
-    public List<Object> findOneCustomer(@PathVariable("id") String id) throws ParseException {
+    public List<Object> findOneCustomer(@RequestBody String id) throws ParseException {
         List<Object> objects = new ArrayList<>();
         objects.add(customerRepo.findByCuid(id));
         objects.add(cpService.findByCuid(id));

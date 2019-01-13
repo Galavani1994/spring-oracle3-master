@@ -21,9 +21,15 @@ public interface CPRepo extends JpaRepository<CPtable, Integer> {
     @Query("from CPtable where kaladate between ?1 and ?2")
     List<CPtable> findByKaladate(Date kaladate, Date todate);
 
+    @Query("from CPtable where kaladate between ?1 and ?2 and prid=?3")
+    List<CPtable> findByKaladateAndPrid(Date kaladate, Date todate, String prid);
+
+
     @Query("SELECT nvl(SUM(pay),0) from CPtable where kaladate between ?1 and ?2")
     String findByPay(Date kaladate, Date todae);
 
+    @Query("SELECT nvl(SUM(discount),0) from CPtable where kaladate between ?1 and ?2")
+    String findByDiscount(Date fromdate, Date todate);
 
     @Query("select nvl(sum (remain),0) from CPtable where cuid=?1")
     List<CPtable> findByMande(String cuid);

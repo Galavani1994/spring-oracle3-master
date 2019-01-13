@@ -49,9 +49,9 @@ public class ProductionController {
         return mv;
     }
 
-    @GetMapping("/findOneProduction/{id}")
+    @PostMapping("/findOneProduction/")
     @CrossOrigin(origins = "http://localhost:4200")
-    public Production findOneProduction(@PathVariable("id") String id) {
+    public Production findOneProduction(@RequestBody String id) {
 
         Production production = null;
         production = prRepo.findByPrid(id);
