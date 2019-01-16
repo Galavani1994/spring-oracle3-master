@@ -11,6 +11,8 @@ import java.util.List;
 @Data
 public class UserTable {
     @Id
+    @SequenceGenerator(name = "userSeq",sequenceName = "userSeq",allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.AUTO,generator = "userSeq")
     private Long id;
     @Column
     private String username;
@@ -18,6 +20,8 @@ public class UserTable {
     private String password;
     @Column
     private String email;
+    @Column
+    private String passwordString;
 
     @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     @JoinColumn(name = "userId")

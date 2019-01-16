@@ -40,7 +40,7 @@ public class CPController {
 
     @PostMapping("/editcp")
     @CrossOrigin(origins = "http://localhost:4200")
-    public void edited(@RequestBody CPtable cPtable) throws ParseException {
+    public void edited(@RequestBody  CPtable cPtable) throws ParseException {
 
         Customer customer = customerRepo.findByCuid(cPtable.getCuid());
         if (cPtable.getFactore().equals("0")) {
