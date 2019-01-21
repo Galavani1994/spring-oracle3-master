@@ -26,13 +26,13 @@ public class ConfigSecurity extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(userDetailsService).passwordEncoder(encodePWD());
     }
 
-    @Override
+   /* @Override
     protected void configure(HttpSecurity http) throws Exception {
 
         http.csrf().disable();
 
         http.authorizeRequests()
-                .antMatchers("/css/**", "/js/**", "/images/jcaptcha", "/user/**",
+                .antMatchers("/css/**", "/js/**", "/images/jcaptcha", "/user/**","/resources/**",
                         "/soap/**", "/register/**", "/approve/**",
                         "/forget/**", "/cdn/**", "/cus1/**",
                         "/hystrix.stream", "/swagger-ui.html",
@@ -43,6 +43,7 @@ public class ConfigSecurity extends WebSecurityConfigurerAdapter {
                         "/templates/doc/**").permitAll()
                 .antMatchers("/**").permitAll()
                 .antMatchers("/cp/**").permitAll()
+                .antMatchers("/cu/**").permitAll()
                 .antMatchers("/pr/productionPage").permitAll()
                 .antMatchers("/pr/savePr").permitAll()
                 .antMatchers("/pr/deletePr/{id}").permitAll()
@@ -52,7 +53,7 @@ public class ConfigSecurity extends WebSecurityConfigurerAdapter {
                 .antMatchers("/cu/saveCu2").permitAll()
                 .antMatchers("/cu//deleteCu/{id}").permitAll()
                 .antMatchers("/").authenticated()
-                .antMatchers("/cu/**", "/pr/**", "/rp/**").hasRole("admin").anyRequest().authenticated()
+                .antMatchers( "/pr/**", "/rp/**").hasRole("admin").anyRequest().authenticated()
                 .and()
                 .formLogin()
                 .loginPage("/logPage")
@@ -64,6 +65,25 @@ public class ConfigSecurity extends WebSecurityConfigurerAdapter {
                 .exceptionHandling().accessDeniedPage("/404");
 
         http.sessionManagement().maximumSessions(1);
+    }*/
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.csrf().disable()
+                .authorizeRequests().antMatchers("/css/**", "/js/**", "/images/jcaptcha", "/user/**","/resources/**",
+                "/soap/**", "/register/**", "/approve/**",
+                "/forget/**", "/cdn/**", "/cus1/**",
+                "/hystrix.stream", "/swagger-ui.html",
+                "/webjars/springfox-swagger-ui/**", "/configuration/ui",
+                "/swagger-resources", "/v2/api-docs",
+                "/swagger-resources/configuration/ui",
+                "/swagger-resources/configuration/security",
+                "/templates/doc/**").permitAll()
+                .antMatchers("/login").permitAll()
+                .anyRequest().authenticated()
+                .and()
+                .httpBasic();
+
     }
 
     @Bean
@@ -74,3 +94,4 @@ public class ConfigSecurity extends WebSecurityConfigurerAdapter {
 
 
 }
+

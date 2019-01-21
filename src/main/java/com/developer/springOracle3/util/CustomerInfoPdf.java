@@ -13,8 +13,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class CustomerInfoPdf {
     public static ByteArrayInputStream customerPrint(Customer customer) throws IOException, DocumentException, ParseException {
@@ -24,7 +22,7 @@ public class CustomerInfoPdf {
 
         try {
             // Adding Font
-            BaseFont bf = BaseFont.createFont("/fonts/nazanin/B Mitra.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+            BaseFont bf =BaseFont.createFont("C://Windows/Fonts/SMITRA.TTF", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
             Font font = new Font(bf);
             //-------------------------Create Header Table---------------------
             PdfPTable tHeader = new PdfPTable(1);
@@ -188,7 +186,8 @@ public class CustomerInfoPdf {
             document.add(CoTable);
             document.close();
         } catch (DocumentException ex) {
-            Logger.getLogger(GeneratePdfReport.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(GeneratePdfReport.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println(ex.getMessage());
         }
 
         return new ByteArrayInputStream(out.toByteArray());
