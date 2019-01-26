@@ -13,10 +13,10 @@ public class MainController {
         ModelAndView mv = new ModelAndView("indexpage");
         return mv;
     }
-    @RequestMapping("/login")
+    @RequestMapping("/loginlll")
     public boolean login(@RequestBody UserTable user) {
         return
-                user.getUsername().equals("user") && user.getPassword().equals("password");
+                user.getUsername().equals("mahdi") && user.getPassword().equals("mahdi@mahdi");
     }
     @RequestMapping("/404")
     public ModelAndView accessdenied() {

@@ -24,7 +24,7 @@ public class ProductionController {
     @Autowired
     private ProductionRepo prRepo;
 
-    @RequestMapping("/productionPage")
+    @GetMapping("/productionPage")
     @CrossOrigin(origins = "http://localhost:4200")
     public List<ProductionDto> jsonProduction() throws ParseException {
 

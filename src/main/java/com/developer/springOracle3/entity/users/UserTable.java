@@ -27,4 +27,11 @@ public class UserTable {
     @JoinColumn(name = "userId")
     private List<Role> roles;
 
+    public UserTable() {
+    }
+
+    public UserTable(String username, String passwordString) {
+        this.username = username;
+        this.passwordString = passwordString;
+    }
 }
